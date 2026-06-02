@@ -1,5 +1,5 @@
 {
-  "generado": "2026-06-02T13:03:31.256Z",
+  "generado": "2026-06-02T13:15:13.686Z",
   "mes": "2026-05",
   "tcRef": 1436.4959286829856,
   "usuarios": [
@@ -64,11 +64,6 @@
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
     },
     {
-      "nombre": "Tomas Varg",
-      "usuario": "tvarg",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
       "nombre": "Diego Diaz",
       "usuario": "ddiaz",
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
@@ -79,11 +74,6 @@
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
     },
     {
-      "nombre": "Ignacio Lizondo",
-      "usuario": "ilizondo",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
       "nombre": "Alfonso Torres",
       "usuario": "atorres",
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
@@ -91,26 +81,6 @@
     {
       "nombre": "Alderete Nicolas Bernardo",
       "usuario": "nalderete",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
-      "nombre": "Daniela Humano",
-      "usuario": "dhumano",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
-      "nombre": "Sergio Aban",
-      "usuario": "saban",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
-      "nombre": "Mario Rios",
-      "usuario": "mrios",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
-      "nombre": "Ramiro Borda",
-      "usuario": "rborda",
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
     },
     {
@@ -136,11 +106,6 @@
     {
       "nombre": "Joaquin Cardozo",
       "usuario": "jcardozo",
-      "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
-    },
-    {
-      "nombre": "Astún Alfredo Ignacio",
-      "usuario": "aastun",
       "passHash": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4"
     },
     {
