@@ -340,29 +340,34 @@ function renderPortal(D,sess){
     $('#t-historial').innerHTML='<div class="empty">Sin historial disponible todavía.</div>';
   }
 
-  // Ranking anónimo
+  // Ranking anónimo — todos los vendedores de la empresa
   const rankSuc=D.rankingSuc||{};
-  // Buscar en qué sucursales está este vendedor
-  let miSuc=null;
-  for(const[suc,rows]of Object.entries(rankSuc)){if(rows.some(r=>r.v===nombre)){miSuc=suc;break}}
-  if(miSuc&&rankSuc[miSuc]&&rankSuc[miSuc].length>1){
-    const rows=rankSuc[miSuc];
-    const maxCom=Math.max(...rows.map(r=>r.com||0))||1;
-    let h=`<p style="font-size:12px;color:var(--mu);margin-bottom:14px">Ranking anónimo — Sucursal ${miSuc}</p>`;
-    rows.forEach((r,i)=>{
+  // Consolidar todos los vendedores de todas las sucursales
+  const rankMap={};
+  for(const rows of Object.values(rankSuc)){
+    for(const r of rows){
+      if(!rankMap[r.v])rankMap[r.v]=0;
+      rankMap[r.v]+=r.com||0;
+    }
+  }
+  const rankAll=Object.entries(rankMap).map(([v,com])=>({v,com})).sort((a,b)=>b.com-a.com);
+  if(rankAll.length>1){
+    const maxCom=rankAll[0].com||1;
+    let h=`<p style="font-size:12px;color:var(--mu);margin-bottom:14px">Ranking general — todos los vendedores</p>`;
+    rankAll.forEach((r,i)=>{
       const isMe=r.v===nombre;
       const pct=Math.max(4,(r.com/maxCom)*100);
       const medal=i===0?'gold':i===1?'silver':i===2?'bronze':'';
       h+=`<div class="rank-item${isMe?' me':''}">
         <div class="rank-n${medal?' '+medal:''}">${i+1}</div>
-        <div class="rank-name">${isMe?'<strong style="color:var(--gn)">Vos</strong>':`Vendedor ${i+1}`}</div>
+        <div class="rank-name">${isMe?'<strong style="color:var(--gd)">Vos</strong>':`Vendedor ${i+1}`}</div>
         <div class="rank-bar-wrap"><div class="rank-bar" style="width:${pct}%"></div></div>
         <div class="rank-val">${fmtV(r.com)}</div>
       </div>`;
     });
     $('#t-ranking').innerHTML=h;
   } else {
-    $('#t-ranking').innerHTML='<div class="empty">Ranking disponible cuando haya más de un vendedor en tu sucursal.</div>';
+    $('#t-ranking').innerHTML='<div class="empty">Ranking disponible cuando haya más de un vendedor con datos.</div>';
   }
 
   // Activar tabs
