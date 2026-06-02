@@ -1,7 +1,7 @@
 {
-  "generado": "2026-06-02T12:45:02.845Z",
+  "generado": "2026-06-02T13:03:31.256Z",
   "mes": "2026-05",
-  "tcRef": 1436.492987678652,
+  "tcRef": 1436.4959286829856,
   "usuarios": [
     {
       "nombre": "Martinez Gabriel Emanuel",
@@ -151,15 +151,15 @@
   ],
   "vendedores": {
     "Martinez Gabriel Emanuel": {
-      "com": 990166.8491697679,
-      "comUSD": 689.2945929167817,
+      "com": 981247.6435796292,
+      "comUSD": 683.0841800430726,
       "facts": 142,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 198033369.8339536,
+      "bn": 196249528.71592584,
       "det": [
         {
           "f": "2026-05-01",
@@ -3165,21 +3165,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 990166.8491697679,
+          "com": 981247.6435796292,
           "facts": 142
         }
       ]
     },
     "Santillán Nicolás": {
-      "com": 370278.4422829247,
-      "comUSD": 257.7655759261925,
+      "com": 361653.24311654904,
+      "comUSD": 251.76071570778592,
       "facts": 92,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 74055688.45658495,
+      "bn": 72330648.6233098,
       "det": [
         {
           "f": "2026-05-06",
@@ -5978,21 +5978,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 370278.4422829247,
+          "com": 361653.24311654904,
           "facts": 92
         }
       ]
     },
     "Barros Julio Dante": {
-      "com": 344031.9128330068,
-      "comUSD": 239.49432108885995,
-      "facts": 82,
+      "com": 338284.95538182027,
+      "comUSD": 235.49315290574347,
+      "facts": 84,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 68806382.56660137,
+      "bn": 67656991.07636406,
       "det": [
         {
           "f": "2026-05-02",
@@ -6101,6 +6101,15 @@
           "u": 171.67,
           "tc": 1420,
           "bp": 243771
+        },
+        {
+          "f": "2026-05-05",
+          "s": 104,
+          "c": "CEKADA IVAN RAMON Y CEKADA MIRKO IVAN SH",
+          "ch": "Mostrador",
+          "u": 46.1,
+          "tc": 1425,
+          "bp": 65693
         },
         {
           "f": "2026-05-05",
@@ -6715,6 +6724,15 @@
           "bp": 1020916
         },
         {
+          "f": "2026-05-27",
+          "s": 104,
+          "c": "EL BAGUAL SERVICIOS AGRICOLAS SAS",
+          "ch": "Mostrador",
+          "u": 47.86,
+          "tc": 1430,
+          "bp": 68440
+        },
+        {
           "f": "2026-05-28",
           "s": 104,
           "c": "VALERO ZAZZARINI JUAN GABRIEL",
@@ -6806,15 +6824,6 @@
           "u": 378.5,
           "tc": 1425,
           "bp": 539363
-        },
-        {
-          "f": "2026-05-05",
-          "s": 104,
-          "c": "CEKADA IVAN RAMON Y CEKADA MIRKO IVAN SH",
-          "ch": "Mostrador",
-          "u": 46.1,
-          "tc": 1425,
-          "bp": 65693
         },
         {
           "f": "2026-05-06",
@@ -7818,15 +7827,6 @@
         {
           "f": "2026-05-27",
           "s": 104,
-          "c": "EL BAGUAL SERVICIOS AGRICOLAS SAS",
-          "ch": "Mostrador",
-          "u": 47.86,
-          "tc": 1430,
-          "bp": 68440
-        },
-        {
-          "f": "2026-05-27",
-          "s": 104,
           "c": "AGRICOLA EL RINCON S.R.L.",
           "ch": "Mostrador",
           "u": 201.66,
@@ -8035,21 +8035,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 344031.9128330068,
-          "facts": 82
+          "com": 338284.95538182027,
+          "facts": 84
         }
       ]
     },
     "CARLOS SPECOGNA": {
-      "com": 246639.61043240302,
-      "comUSD": 171.69565918380735,
+      "com": 244417.9349703707,
+      "comUSD": 170.14871402695795,
       "facts": 93,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 49327922.0864806,
+      "bn": 48883586.994074136,
       "det": [
         {
           "f": "2026-05-04",
@@ -10002,14 +10002,14 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 246639.61043240302,
+          "com": 244417.9349703707,
           "facts": 93
         }
       ]
     },
     "Martinez Daniel Alberto": {
       "com": 234965.3967406784,
-      "comUSD": 163.56877392097712,
+      "comUSD": 163.56843903908617,
       "facts": 88,
       "rate": 0.005,
       "esJefe": false,
@@ -12020,15 +12020,15 @@
       ]
     },
     "Fontanini Hugo Luis": {
-      "com": 162539.3471464433,
-      "comUSD": 113.1501152742166,
-      "facts": 60,
+      "com": 167488.81191817968,
+      "comUSD": 116.59539618169158,
+      "facts": 63,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 32507869.429288656,
+      "bn": 33497762.383635934,
       "det": [
         {
           "f": "2026-05-04",
@@ -12391,6 +12391,15 @@
           "bp": 610444
         },
         {
+          "f": "2026-05-15",
+          "s": 104,
+          "c": "ABRA DE SOL S.R.L.",
+          "ch": "Mostrador",
+          "u": 1187.57,
+          "tc": 1420,
+          "bp": 1686349
+        },
+        {
           "f": "2026-05-16",
           "s": 104,
           "c": "RURAL DANIE BRUNO SRL",
@@ -12398,6 +12407,15 @@
           "u": 514.5,
           "tc": 1425,
           "bp": 733163
+        },
+        {
+          "f": "2026-05-18",
+          "s": 104,
+          "c": "BALOCCO ROBERTO LUCIANO",
+          "ch": "Mostrador",
+          "u": 110.4,
+          "tc": 1425,
+          "bp": 157320
         },
         {
           "f": "2026-05-18",
@@ -12416,6 +12434,15 @@
           "u": 1313.24,
           "tc": 1410,
           "bp": 1851668
+        },
+        {
+          "f": "2026-05-19",
+          "s": 104,
+          "c": "ABRA DE SOL S.R.L.",
+          "ch": "Mostrador",
+          "u": 175.33,
+          "tc": 1425,
+          "bp": 249845
         },
         {
           "f": "2026-05-20",
@@ -12988,15 +13015,6 @@
           "bp": 1092946
         },
         {
-          "f": "2026-05-15",
-          "s": 104,
-          "c": "ABRA DE SOL S.R.L.",
-          "ch": "Mostrador",
-          "u": 1187.57,
-          "tc": 1420,
-          "bp": 1686349
-        },
-        {
           "f": "2026-05-16",
           "s": 104,
           "c": "ESTANCIA LOS MIRKOS S.A.",
@@ -13004,15 +13022,6 @@
           "u": 365.38,
           "tc": 1425,
           "bp": 520667
-        },
-        {
-          "f": "2026-05-18",
-          "s": 104,
-          "c": "BALOCCO ROBERTO LUCIANO",
-          "ch": "Mostrador",
-          "u": 110.4,
-          "tc": 1425,
-          "bp": 157320
         },
         {
           "f": "2026-05-18",
@@ -13076,15 +13085,6 @@
           "u": 85.9,
           "tc": 1425,
           "bp": 122408
-        },
-        {
-          "f": "2026-05-19",
-          "s": 104,
-          "c": "ABRA DE SOL S.R.L.",
-          "ch": "Mostrador",
-          "u": 175.33,
-          "tc": 1425,
-          "bp": 249845
         },
         {
           "f": "2026-05-19",
@@ -13603,14 +13603,14 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 162539.3471464433,
-          "facts": 60
+          "com": 167488.81191817968,
+          "facts": 63
         }
       ]
     },
     "Galarza Pedro Ariel": {
       "com": 153146.0600014824,
-      "comUSD": 106.61107385491927,
+      "comUSD": 106.61085558515327,
       "facts": 54,
       "rate": 0.0075,
       "esJefe": false,
@@ -14541,15 +14541,15 @@
       ]
     },
     "Pablo Moyano": {
-      "com": 139720.60313655718,
-      "comUSD": 97.26507844799387,
+      "com": 136465.97663907905,
+      "comUSD": 94.99920877895866,
       "facts": 79,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 27944120.627311435,
+      "bn": 27293195.32781581,
       "det": [
         {
           "f": "2026-05-04",
@@ -17303,21 +17303,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 139720.60313655718,
+          "com": 136465.97663907905,
           "facts": 79
         }
       ]
     },
     "Rivero Ruben Eduardo": {
-      "com": 118976.80726865727,
-      "comUSD": 82.82449569135854,
+      "com": 110424.4704617971,
+      "comUSD": 76.87071592540951,
       "facts": 82,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 23795361.453731455,
+      "bn": 22084894.09235942,
       "det": [
         {
           "f": "2026-05-04",
@@ -18631,233 +18631,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 118976.80726865727,
+          "com": 110424.4704617971,
           "facts": 82
         }
       ]
     },
-    "Alderete Nicolas Bernardo": {
-      "com": 107648.45398225522,
-      "comUSD": 74.93837763608806,
-      "facts": 14,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 21529690.796451043,
-      "det": [
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "MADREJONE S.R.L.",
-          "ch": "Mostrador",
-          "u": 593.58,
-          "tc": 1420,
-          "bp": 842884
-        },
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "BARCELO, RAUL",
-          "ch": "Mostrador",
-          "u": 5.77,
-          "tc": 1420,
-          "bp": 8193
-        },
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "LA DOBLE S AGROPECUARIA S.A.S.",
-          "ch": "Mostrador",
-          "u": 388.47,
-          "tc": 1420,
-          "bp": 551627
-        },
-        {
-          "f": "2026-05-02",
-          "s": 103,
-          "c": "AGROSERVICIO SAN JUAN SRL",
-          "ch": "Mostrador",
-          "u": 23.56,
-          "tc": 1420,
-          "bp": 33455
-        },
-        {
-          "f": "2026-05-03",
-          "s": 103,
-          "c": "AGROSERVICIO SAN JUAN SRL",
-          "ch": "Mostrador",
-          "u": 103.37,
-          "tc": 1420,
-          "bp": 146785
-        },
-        {
-          "f": "2026-05-06",
-          "s": 103,
-          "c": "AGROPECUARIA YUCHAN S.A.",
-          "ch": "Mostrador",
-          "u": 1346.3,
-          "tc": 1420,
-          "bp": 1911746
-        },
-        {
-          "f": "2026-05-06",
-          "s": 103,
-          "c": "AGROPECUARIA YUCHAN S.A.",
-          "ch": "Mostrador",
-          "u": 353.6,
-          "tc": 1420,
-          "bp": 502112
-        },
-        {
-          "f": "2026-05-07",
-          "s": 103,
-          "c": "DEMARTIN GUSTAVO JAVIER",
-          "ch": "Mostrador",
-          "u": 3126.28,
-          "tc": 1415,
-          "bp": 4423686
-        },
-        {
-          "f": "2026-05-09",
-          "s": 103,
-          "c": "LA DOBLE S AGROPECUARIA S.A.S.",
-          "ch": "Mostrador",
-          "u": 2485.58,
-          "tc": 1425,
-          "bp": 3541952
-        },
-        {
-          "f": "2026-05-09",
-          "s": 103,
-          "c": "LA DOBLE S AGROPECUARIA S.A.S.",
-          "ch": "Mostrador",
-          "u": 1427.79,
-          "tc": 1425,
-          "bp": 2034601
-        },
-        {
-          "f": "2026-05-11",
-          "s": 103,
-          "c": "BUNGE ARGENTINA S.A.",
-          "ch": "Mostrador",
-          "u": 2356.08,
-          "tc": 1420,
-          "bp": 3345634
-        },
-        {
-          "f": "2026-05-11",
-          "s": 103,
-          "c": "BUNGE ARGENTINA S.A.",
-          "ch": "Mostrador",
-          "u": 2168.27,
-          "tc": 1392,
-          "bp": 3017148
-        },
-        {
-          "f": "2026-05-12",
-          "s": 103,
-          "c": "RAMIREZ ANAHI MERCEDEZ",
-          "ch": "Mostrador",
-          "u": 14.58,
-          "tc": 1445,
-          "bp": 21068
-        },
-        {
-          "f": "2026-05-14",
-          "s": 103,
-          "c": "SEGOVIA JUAN JOSE ALEJANDRO",
-          "ch": "Mostrador",
-          "u": 2249.36,
-          "tc": 1420,
-          "bp": 3194091
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "JYK S.R.L",
-          "ch": "Mostrador",
-          "u": 1187.09,
-          "tc": 1420,
-          "bp": 1685668
-        },
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "AGRICOLA LAS LANZAS S.A",
-          "ch": "Mostrador",
-          "u": 385.71,
-          "tc": 1420,
-          "bp": 547708
-        },
-        {
-          "f": "2026-05-01",
-          "s": 103,
-          "c": "GRUPO ANTA DEL PLATA S.A.",
-          "ch": "Mostrador",
-          "u": 175.06,
-          "tc": 1420,
-          "bp": 248585
-        },
-        {
-          "f": "2026-05-04",
-          "s": 103,
-          "c": "AGROJAVA S.R.L.",
-          "ch": "Mostrador",
-          "u": 41628.18,
-          "tc": 1425,
-          "bp": 59320157
-        },
-        {
-          "f": "2026-05-06",
-          "s": 103,
-          "c": "FERTYSUELO S. A. S.",
-          "ch": "Mostrador",
-          "u": 361.29,
-          "tc": 1420,
-          "bp": 513032
-        },
-        {
-          "f": "2026-05-07",
-          "s": 103,
-          "c": "ESCUDERO BATTISTELLA Y ASOC S.R.L",
-          "ch": "Mostrador",
-          "u": 657.18,
-          "tc": 1415,
-          "bp": 929910
-        },
-        {
-          "f": "2026-05-14",
-          "s": 103,
-          "c": "DEMARTIN GUSTAVO JAVIER",
-          "ch": "Mostrador",
-          "u": 2767.05,
-          "tc": 1420,
-          "bp": 3929211
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 107648.45398225522,
-          "facts": 14
-        }
-      ]
-    },
     "Diego Diaz": {
-      "com": 91608.2171319986,
-      "comUSD": 63.7721297059973,
+      "com": 90817.47883506164,
+      "comUSD": 63.22153583708749,
       "facts": 14,
       "rate": 0.0075,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 12214428.950933145,
+      "bn": 12108997.178008221,
       "det": [
         {
           "f": "2026-05-04",
@@ -19154,14 +18942,14 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 91608.2171319986,
+          "com": 90817.47883506164,
           "facts": 14
         }
       ]
     },
     "Benitez Marcelo": {
       "com": 90594.97938951834,
-      "comUSD": 63.066774545080285,
+      "comUSD": 63.06664542556555,
       "facts": 50,
       "rate": 0.005,
       "esJefe": false,
@@ -19749,16 +19537,354 @@
         }
       ]
     },
+    "Ibáñez Luis Oscar": {
+      "com": 41233.771617642706,
+      "comUSD": 28.70441244859415,
+      "facts": 21,
+      "rate": 0.005,
+      "esJefe": false,
+      "canal": null,
+      "esAux": false,
+      "suc": null,
+      "bn": 8246754.32352854,
+      "det": [
+        {
+          "f": "2026-05-04",
+          "s": 108,
+          "c": "MATEO GERARDO DANIEL",
+          "ch": "Mostrador",
+          "u": 595.36,
+          "tc": 1425,
+          "bp": 848388
+        },
+        {
+          "f": "2026-05-05",
+          "s": 108,
+          "c": "CONSORCIO CAMINERO N 26 MARGARITA BELEN CHACO",
+          "ch": "Mostrador",
+          "u": 59.99,
+          "tc": 1425,
+          "bp": 85486
+        },
+        {
+          "f": "2026-05-05",
+          "s": 108,
+          "c": "JR CONSTRUCTORA S.A.",
+          "ch": "Mostrador",
+          "u": 320.15,
+          "tc": 1425,
+          "bp": 456214
+        },
+        {
+          "f": "2026-05-07",
+          "s": 108,
+          "c": "MARTINEZ PEDRO ALBERTO",
+          "ch": "Mostrador",
+          "u": 153.13,
+          "tc": 1420,
+          "bp": 217445
+        },
+        {
+          "f": "2026-05-08",
+          "s": 108,
+          "c": "MELLI MARCO DAMIAN",
+          "ch": "Mostrador",
+          "u": 200,
+          "tc": 1415,
+          "bp": 283000
+        },
+        {
+          "f": "2026-05-13",
+          "s": 108,
+          "c": "CHAMORRO FERNANDO GABRIEL",
+          "ch": "Mostrador",
+          "u": 775.2,
+          "tc": 1405,
+          "bp": 1089156
+        },
+        {
+          "f": "2026-05-15",
+          "s": 108,
+          "c": "TALLER I S.R.L.",
+          "ch": "Mostrador",
+          "u": 461.78,
+          "tc": 1420,
+          "bp": 655728
+        },
+        {
+          "f": "2026-05-18",
+          "s": 108,
+          "c": "AMF NEA SAS",
+          "ch": "Mostrador",
+          "u": 50.65,
+          "tc": 1420,
+          "bp": 71923
+        },
+        {
+          "f": "2026-05-19",
+          "s": 108,
+          "c": "INARI S. R. L.",
+          "ch": "Mostrador",
+          "u": 118.17,
+          "tc": 1420,
+          "bp": 167801
+        },
+        {
+          "f": "2026-05-19",
+          "s": 108,
+          "c": "MOSER ALBERTO OSCAR",
+          "ch": "Mostrador",
+          "u": 236.13,
+          "tc": 1420,
+          "bp": 335305
+        },
+        {
+          "f": "2026-05-19",
+          "s": 108,
+          "c": "MOSER ALBERTO OSCAR",
+          "ch": "Mostrador",
+          "u": 31.85,
+          "tc": 1420,
+          "bp": 45227
+        },
+        {
+          "f": "2026-05-19",
+          "s": 108,
+          "c": "AGD S.A",
+          "ch": "Taller",
+          "u": 250,
+          "tc": 1415,
+          "bp": 353750
+        },
+        {
+          "f": "2026-05-20",
+          "s": 108,
+          "c": "AZ S.A",
+          "ch": "Mostrador",
+          "u": 85.64,
+          "tc": 1420,
+          "bp": 121609
+        },
+        {
+          "f": "2026-05-20",
+          "s": 108,
+          "c": "CONSORCIO CAMINERO N 26 MARGARITA BELEN CHACO",
+          "ch": "Taller",
+          "u": 260.8,
+          "tc": 1420,
+          "bp": 370336
+        },
+        {
+          "f": "2026-05-20",
+          "s": 108,
+          "c": "DIRECCION PROVINCIAL DE VIALIDAD FORMOSA",
+          "ch": "Taller",
+          "u": 878.24,
+          "tc": 1420,
+          "bp": 1247101
+        },
+        {
+          "f": "2026-05-21",
+          "s": 108,
+          "c": "NOVELLI SACIFA S.A",
+          "ch": "Taller",
+          "u": 1211.4,
+          "tc": 1420,
+          "bp": 1720188
+        },
+        {
+          "f": "2026-05-22",
+          "s": 108,
+          "c": "CONSUMIDOR FINAL",
+          "ch": "Mostrador",
+          "u": 99.38,
+          "tc": 1425,
+          "bp": 141617
+        },
+        {
+          "f": "2026-05-22",
+          "s": 108,
+          "c": "ERCEG HORACIO MIGUEL",
+          "ch": "Mostrador",
+          "u": 131.45,
+          "tc": 1410,
+          "bp": 185344
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "SCHNEEBAUER FEDERICO JOSE ANTONIO",
+          "ch": "Mostrador",
+          "u": 13.3,
+          "tc": 1430,
+          "bp": 19019
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "CHAMORRO FERNANDO GABRIEL",
+          "ch": "Mostrador",
+          "u": 80.11,
+          "tc": 1430,
+          "bp": 114557
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "FRU - VER SRL",
+          "ch": "Mostrador",
+          "u": 111.56,
+          "tc": 1430,
+          "bp": 159531
+        }
+      ],
+      "pendAnt": [],
+      "pend": [
+        {
+          "f": "2026-05-04",
+          "s": 108,
+          "c": "AGD S.A",
+          "ch": "Mostrador",
+          "u": 876.05,
+          "tc": 1415,
+          "bp": 1239611
+        },
+        {
+          "f": "2026-05-05",
+          "s": 108,
+          "c": "ADECO AGROPECUARIA S.A",
+          "ch": "Taller",
+          "u": 1839.21,
+          "tc": 1415,
+          "bp": 2602482
+        },
+        {
+          "f": "2026-05-11",
+          "s": 108,
+          "c": "SHONKO S A",
+          "ch": "Mostrador",
+          "u": 287.58,
+          "tc": 1415,
+          "bp": 406926
+        },
+        {
+          "f": "2026-05-15",
+          "s": 108,
+          "c": "VIALIDAD NACIONAL",
+          "ch": "Mostrador",
+          "u": 127.52,
+          "tc": 1,
+          "bp": 128
+        },
+        {
+          "f": "2026-05-18",
+          "s": 108,
+          "c": "SAN FRANCISCO AGROPECUARIA SOCIEDAD ANONIMA",
+          "ch": "Mostrador",
+          "u": 159.32,
+          "tc": 1420,
+          "bp": 226234
+        },
+        {
+          "f": "2026-05-20",
+          "s": 108,
+          "c": "CEAGRO S A",
+          "ch": "Mostrador",
+          "u": 201.6,
+          "tc": 1415,
+          "bp": 285264
+        },
+        {
+          "f": "2026-05-20",
+          "s": 108,
+          "c": "ADECO AGROPECUARIA S.A",
+          "ch": "Mostrador",
+          "u": 815.49,
+          "tc": 1397,
+          "bp": 1139240
+        },
+        {
+          "f": "2026-05-26",
+          "s": 108,
+          "c": "ESTERO DEL NORTE S.R.L.",
+          "ch": "Mostrador",
+          "u": 356.59,
+          "tc": 1425,
+          "bp": 508141
+        },
+        {
+          "f": "2026-05-26",
+          "s": 108,
+          "c": "ALTAMIRANO & PALACIOS S.A.",
+          "ch": "Mostrador",
+          "u": 154.98,
+          "tc": 1425,
+          "bp": 220846
+        },
+        {
+          "f": "2026-05-27",
+          "s": 108,
+          "c": "MATEO GERARDO DANIEL",
+          "ch": "Mostrador",
+          "u": 303.99,
+          "tc": 1430,
+          "bp": 434706
+        },
+        {
+          "f": "2026-05-27",
+          "s": 108,
+          "c": "MATEO GERARDO DANIEL",
+          "ch": "Mostrador",
+          "u": 72.33,
+          "tc": 1430,
+          "bp": 103432
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "BIELAK GLORIA NOELIA",
+          "ch": "Mostrador",
+          "u": 24.39,
+          "tc": 1430,
+          "bp": 34878
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "BIELAK GLORIA NOELIA",
+          "ch": "Mostrador",
+          "u": 358.6,
+          "tc": 1430,
+          "bp": 512798
+        },
+        {
+          "f": "2026-05-29",
+          "s": 108,
+          "c": "OZOG VIAL SRL",
+          "ch": "Mostrador",
+          "u": 271.26,
+          "tc": 1430,
+          "bp": 387902
+        }
+      ],
+      "hist": [
+        {
+          "mes": "2026-05",
+          "com": 41233.771617642706,
+          "facts": 21
+        }
+      ]
+    },
     "Roberto Solaliga": {
-      "com": 42694.06087833424,
-      "comUSD": 29.721036750292186,
+      "com": 39502.06879451925,
+      "comUSD": 27.49890758878496,
       "facts": 62,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 8538812.175666848,
+      "bn": 7900413.758903849,
       "det": [
         {
           "f": "2026-05-04",
@@ -20910,1317 +21036,14 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 42694.06087833424,
+          "com": 39502.06879451925,
           "facts": 62
-        }
-      ]
-    },
-    "Ibáñez Luis Oscar": {
-      "com": 41297.97967455812,
-      "comUSD": 28.74916900311149,
-      "facts": 21,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 8259595.934911624,
-      "det": [
-        {
-          "f": "2026-05-04",
-          "s": 108,
-          "c": "MATEO GERARDO DANIEL",
-          "ch": "Mostrador",
-          "u": 595.36,
-          "tc": 1425,
-          "bp": 848388
-        },
-        {
-          "f": "2026-05-05",
-          "s": 108,
-          "c": "CONSORCIO CAMINERO N 26 MARGARITA BELEN CHACO",
-          "ch": "Mostrador",
-          "u": 59.99,
-          "tc": 1425,
-          "bp": 85486
-        },
-        {
-          "f": "2026-05-05",
-          "s": 108,
-          "c": "JR CONSTRUCTORA S.A.",
-          "ch": "Mostrador",
-          "u": 320.15,
-          "tc": 1425,
-          "bp": 456214
-        },
-        {
-          "f": "2026-05-07",
-          "s": 108,
-          "c": "MARTINEZ PEDRO ALBERTO",
-          "ch": "Mostrador",
-          "u": 153.13,
-          "tc": 1420,
-          "bp": 217445
-        },
-        {
-          "f": "2026-05-08",
-          "s": 108,
-          "c": "MELLI MARCO DAMIAN",
-          "ch": "Mostrador",
-          "u": 200,
-          "tc": 1415,
-          "bp": 283000
-        },
-        {
-          "f": "2026-05-13",
-          "s": 108,
-          "c": "CHAMORRO FERNANDO GABRIEL",
-          "ch": "Mostrador",
-          "u": 775.2,
-          "tc": 1405,
-          "bp": 1089156
-        },
-        {
-          "f": "2026-05-15",
-          "s": 108,
-          "c": "TALLER I S.R.L.",
-          "ch": "Mostrador",
-          "u": 461.78,
-          "tc": 1420,
-          "bp": 655728
-        },
-        {
-          "f": "2026-05-18",
-          "s": 108,
-          "c": "AMF NEA SAS",
-          "ch": "Mostrador",
-          "u": 50.65,
-          "tc": 1420,
-          "bp": 71923
-        },
-        {
-          "f": "2026-05-19",
-          "s": 108,
-          "c": "INARI S. R. L.",
-          "ch": "Mostrador",
-          "u": 118.17,
-          "tc": 1420,
-          "bp": 167801
-        },
-        {
-          "f": "2026-05-19",
-          "s": 108,
-          "c": "MOSER ALBERTO OSCAR",
-          "ch": "Mostrador",
-          "u": 236.13,
-          "tc": 1420,
-          "bp": 335305
-        },
-        {
-          "f": "2026-05-19",
-          "s": 108,
-          "c": "MOSER ALBERTO OSCAR",
-          "ch": "Mostrador",
-          "u": 31.85,
-          "tc": 1420,
-          "bp": 45227
-        },
-        {
-          "f": "2026-05-19",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 250,
-          "tc": 1415,
-          "bp": 353750
-        },
-        {
-          "f": "2026-05-20",
-          "s": 108,
-          "c": "AZ S.A",
-          "ch": "Mostrador",
-          "u": 85.64,
-          "tc": 1420,
-          "bp": 121609
-        },
-        {
-          "f": "2026-05-20",
-          "s": 108,
-          "c": "CONSORCIO CAMINERO N 26 MARGARITA BELEN CHACO",
-          "ch": "Taller",
-          "u": 260.8,
-          "tc": 1420,
-          "bp": 370336
-        },
-        {
-          "f": "2026-05-20",
-          "s": 108,
-          "c": "DIRECCION PROVINCIAL DE VIALIDAD FORMOSA",
-          "ch": "Taller",
-          "u": 878.24,
-          "tc": 1420,
-          "bp": 1247101
-        },
-        {
-          "f": "2026-05-21",
-          "s": 108,
-          "c": "NOVELLI SACIFA S.A",
-          "ch": "Taller",
-          "u": 1211.4,
-          "tc": 1420,
-          "bp": 1720188
-        },
-        {
-          "f": "2026-05-22",
-          "s": 108,
-          "c": "CONSUMIDOR FINAL",
-          "ch": "Mostrador",
-          "u": 99.38,
-          "tc": 1425,
-          "bp": 141617
-        },
-        {
-          "f": "2026-05-22",
-          "s": 108,
-          "c": "ERCEG HORACIO MIGUEL",
-          "ch": "Mostrador",
-          "u": 131.45,
-          "tc": 1410,
-          "bp": 185344
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "SCHNEEBAUER FEDERICO JOSE ANTONIO",
-          "ch": "Mostrador",
-          "u": 13.3,
-          "tc": 1430,
-          "bp": 19019
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "CHAMORRO FERNANDO GABRIEL",
-          "ch": "Mostrador",
-          "u": 80.11,
-          "tc": 1430,
-          "bp": 114557
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "FRU - VER SRL",
-          "ch": "Mostrador",
-          "u": 111.56,
-          "tc": 1430,
-          "bp": 159531
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-04",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Mostrador",
-          "u": 876.05,
-          "tc": 1415,
-          "bp": 1239611
-        },
-        {
-          "f": "2026-05-05",
-          "s": 108,
-          "c": "ADECO AGROPECUARIA S.A",
-          "ch": "Taller",
-          "u": 1839.21,
-          "tc": 1415,
-          "bp": 2602482
-        },
-        {
-          "f": "2026-05-11",
-          "s": 108,
-          "c": "SHONKO S A",
-          "ch": "Mostrador",
-          "u": 287.58,
-          "tc": 1415,
-          "bp": 406926
-        },
-        {
-          "f": "2026-05-15",
-          "s": 108,
-          "c": "VIALIDAD NACIONAL",
-          "ch": "Mostrador",
-          "u": 127.52,
-          "tc": 1,
-          "bp": 128
-        },
-        {
-          "f": "2026-05-18",
-          "s": 108,
-          "c": "SAN FRANCISCO AGROPECUARIA SOCIEDAD ANONIMA",
-          "ch": "Mostrador",
-          "u": 159.32,
-          "tc": 1420,
-          "bp": 226234
-        },
-        {
-          "f": "2026-05-20",
-          "s": 108,
-          "c": "CEAGRO S A",
-          "ch": "Mostrador",
-          "u": 201.6,
-          "tc": 1415,
-          "bp": 285264
-        },
-        {
-          "f": "2026-05-20",
-          "s": 108,
-          "c": "ADECO AGROPECUARIA S.A",
-          "ch": "Mostrador",
-          "u": 815.49,
-          "tc": 1397,
-          "bp": 1139240
-        },
-        {
-          "f": "2026-05-26",
-          "s": 108,
-          "c": "ESTERO DEL NORTE S.R.L.",
-          "ch": "Mostrador",
-          "u": 356.59,
-          "tc": 1425,
-          "bp": 508141
-        },
-        {
-          "f": "2026-05-26",
-          "s": 108,
-          "c": "ALTAMIRANO & PALACIOS S.A.",
-          "ch": "Mostrador",
-          "u": 154.98,
-          "tc": 1425,
-          "bp": 220846
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "MATEO GERARDO DANIEL",
-          "ch": "Mostrador",
-          "u": 303.99,
-          "tc": 1430,
-          "bp": 434706
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "MATEO GERARDO DANIEL",
-          "ch": "Mostrador",
-          "u": 72.33,
-          "tc": 1430,
-          "bp": 103432
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "BIELAK GLORIA NOELIA",
-          "ch": "Mostrador",
-          "u": 24.39,
-          "tc": 1430,
-          "bp": 34878
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "BIELAK GLORIA NOELIA",
-          "ch": "Mostrador",
-          "u": 358.6,
-          "tc": 1430,
-          "bp": 512798
-        },
-        {
-          "f": "2026-05-29",
-          "s": 108,
-          "c": "OZOG VIAL SRL",
-          "ch": "Mostrador",
-          "u": 271.26,
-          "tc": 1430,
-          "bp": 387902
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 41297.97967455812,
-          "facts": 21
-        }
-      ]
-    },
-    "Ignacio Lizondo": {
-      "com": 37022.42549867736,
-      "comUSD": 25.772785399046718,
-      "facts": 10,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 7404485.099735471,
-      "det": [
-        {
-          "f": "2026-05-06",
-          "s": 101,
-          "c": "AGV MAQUINAS S.R.L.",
-          "ch": "Taller",
-          "u": 3209.53,
-          "tc": 1420,
-          "bp": 4557533
-        },
-        {
-          "f": "2026-05-07",
-          "s": 101,
-          "c": "GRUPO ANTA DEL PLATA S.A.",
-          "ch": "Taller",
-          "u": 122.08,
-          "tc": 1415,
-          "bp": 172743
-        },
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "ECO PUNA SA",
-          "ch": "Taller",
-          "u": 553.77,
-          "tc": 1420,
-          "bp": 786353
-        },
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "ECO PUNA SA",
-          "ch": "Taller",
-          "u": 0.08,
-          "tc": 1420,
-          "bp": 114
-        },
-        {
-          "f": "2026-05-13",
-          "s": 101,
-          "c": "ECO PUNA SA",
-          "ch": "Taller",
-          "u": 368.3,
-          "tc": 1410,
-          "bp": 519303
-        },
-        {
-          "f": "2026-05-13",
-          "s": 101,
-          "c": "ECO PUNA SA",
-          "ch": "Taller",
-          "u": 226.68,
-          "tc": 1410,
-          "bp": 319619
-        },
-        {
-          "f": "2026-05-18",
-          "s": 101,
-          "c": "PONESSA MARCOS OCTAVIO",
-          "ch": "Taller",
-          "u": 446.96,
-          "tc": 1420,
-          "bp": 634683
-        },
-        {
-          "f": "2026-05-18",
-          "s": 103,
-          "c": "INVERSORA JURAMENTO S.A",
-          "ch": "Taller",
-          "u": 570.98,
-          "tc": 1425,
-          "bp": 813647
-        },
-        {
-          "f": "2026-05-18",
-          "s": 103,
-          "c": "INVERSORA JURAMENTO S.A",
-          "ch": "Taller",
-          "u": 371.58,
-          "tc": 1425,
-          "bp": 529502
-        },
-        {
-          "f": "2026-05-28",
-          "s": 103,
-          "c": "INVERSORA JURAMENTO S.A",
-          "ch": "Taller",
-          "u": 533.01,
-          "tc": 1435,
-          "bp": 764869
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-05",
-          "s": 101,
-          "c": "CONRADO JUAN LLAPUR S. A. S",
-          "ch": "Taller",
-          "u": 678,
-          "tc": 1430,
-          "bp": 969540
-        },
-        {
-          "f": "2026-05-11",
-          "s": 101,
-          "c": "ECO PUNA SA",
-          "ch": "Taller",
-          "u": 611.4,
-          "tc": 1425,
-          "bp": 871245
-        },
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "AGRICOLA SIANCAS SRL",
-          "ch": "Taller",
-          "u": 1935.78,
-          "tc": 1420,
-          "bp": 2748808
-        },
-        {
-          "f": "2026-05-18",
-          "s": 103,
-          "c": "INVERSORA JURAMENTO S.A",
-          "ch": "Taller",
-          "u": 262.56,
-          "tc": 1420,
-          "bp": 372835
-        },
-        {
-          "f": "2026-05-22",
-          "s": 101,
-          "c": "TRESING S.R.L.",
-          "ch": "Taller",
-          "u": 1314.41,
-          "tc": 1415,
-          "bp": 1859890
-        },
-        {
-          "f": "2026-05-22",
-          "s": 101,
-          "c": "CONSTRUCCIONES CIVILES Y VIALES SRL",
-          "ch": "Taller",
-          "u": 1318.4,
-          "tc": 1415,
-          "bp": 1865536
-        },
-        {
-          "f": "2026-05-27",
-          "s": 101,
-          "c": "MADE S.R.L.",
-          "ch": "Taller",
-          "u": 420,
-          "tc": 1435,
-          "bp": 602700
-        },
-        {
-          "f": "2026-05-27",
-          "s": 101,
-          "c": "MADE S.R.L.",
-          "ch": "Taller",
-          "u": 527.2,
-          "tc": 1435,
-          "bp": 756532
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "VELARDE SAN ROMAN INES",
-          "ch": "Taller",
-          "u": 340.77,
-          "tc": 1435,
-          "bp": 489005
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "CONSORCIO DE PROPIETARIOS CLUB DE CAMPO EL AYBAL",
-          "ch": "Taller",
-          "u": 285.28,
-          "tc": 1435,
-          "bp": 409377
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "MUNICIPALIDAD DE SAN CARLOS",
-          "ch": "Taller",
-          "u": 1347.81,
-          "tc": 1435,
-          "bp": 1934107
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "CARAPARI S.A.",
-          "ch": "Taller",
-          "u": 492.06,
-          "tc": 1435,
-          "bp": 706106
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "VILCA CRISTIAN",
-          "ch": "Taller",
-          "u": 2453.88,
-          "tc": 1435,
-          "bp": 3521318
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "TOLABA ADOLFO NICOLAS",
-          "ch": "Taller",
-          "u": 3656.63,
-          "tc": 1435,
-          "bp": 5247264
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "SAYUS GARCIA FACUNDO JAVIER",
-          "ch": "Taller",
-          "u": 511.02,
-          "tc": 1435,
-          "bp": 733314
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "ARROYO - MANNORI CONSTRUCCIONES Y ASOCIADOS S.R.L.",
-          "ch": "Taller",
-          "u": 843.76,
-          "tc": 1435,
-          "bp": 1210796
-        },
-        {
-          "f": "2026-05-28",
-          "s": 103,
-          "c": "INVERSORA JURAMENTO S.A",
-          "ch": "Taller",
-          "u": 212.54,
-          "tc": 1435,
-          "bp": 304995
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "SALES DE JUJUY SOCIEDAD ANONIMA",
-          "ch": "Taller",
-          "u": 2930,
-          "tc": 1410,
-          "bp": 4131300
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "SALES DE JUJUY SOCIEDAD ANONIMA",
-          "ch": "Taller",
-          "u": 622,
-          "tc": 1410,
-          "bp": 877020
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "COMPAÑIA AGRARIA SAN JOSE S.A.",
-          "ch": "Taller",
-          "u": 11511.92,
-          "tc": 1435,
-          "bp": 16519605
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "SALES DE JUJUY SOCIEDAD ANONIMA",
-          "ch": "Taller",
-          "u": 1455,
-          "tc": 1410,
-          "bp": 2051550
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "LAS PAYAS S.A.",
-          "ch": "Taller",
-          "u": 1376.55,
-          "tc": 1435,
-          "bp": 1975349
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 37022.42549867736,
-          "facts": 10
-        }
-      ]
-    },
-    "Mario Rios": {
-      "com": 30333.825085307184,
-      "comUSD": 21.116584170957996,
-      "facts": 8,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 6066765.017061437,
-      "det": [
-        {
-          "f": "2026-05-14",
-          "s": 104,
-          "c": "SURGEN S.R.L.",
-          "ch": "Taller",
-          "u": 480,
-          "tc": 1420,
-          "bp": 681600
-        },
-        {
-          "f": "2026-05-14",
-          "s": 104,
-          "c": "FINCA CAMPO VERDE S.A",
-          "ch": "Taller",
-          "u": 1378.77,
-          "tc": 1420,
-          "bp": 1957853
-        },
-        {
-          "f": "2026-05-14",
-          "s": 104,
-          "c": "BERRUEZO ALVARO JOSE",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1420,
-          "bp": 255600
-        },
-        {
-          "f": "2026-05-15",
-          "s": 104,
-          "c": "BERRUEZO ALVARO JOSE",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1420,
-          "bp": 255600
-        },
-        {
-          "f": "2026-05-15",
-          "s": 104,
-          "c": "BERRUEZO ALVARO JOSE",
-          "ch": "Taller",
-          "u": 609.58,
-          "tc": 1420,
-          "bp": 865604
-        },
-        {
-          "f": "2026-05-29",
-          "s": 104,
-          "c": "LOS DOS RIOS S.A.",
-          "ch": "Taller",
-          "u": 1200,
-          "tc": 1435,
-          "bp": 1722000
-        },
-        {
-          "f": "2026-05-29",
-          "s": 104,
-          "c": "WINAGRO S.A.",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1435,
-          "bp": 258300
-        },
-        {
-          "f": "2026-05-29",
-          "s": 104,
-          "c": "AJU SRL",
-          "ch": "Taller",
-          "u": 1680,
-          "tc": 1435,
-          "bp": 2410800
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-27",
-          "s": 104,
-          "c": "FRIAS RAFAEL EXMERITO",
-          "ch": "Taller",
-          "u": 883.93,
-          "tc": 1435,
-          "bp": 1268440
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 30333.825085307184,
-          "facts": 8
-        }
-      ]
-    },
-    "Tomas Varg": {
-      "com": 29026.179260103923,
-      "comUSD": 20.20627981415331,
-      "facts": 12,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 5805235.852020784,
-      "det": [
-        {
-          "f": "2026-05-11",
-          "s": 107,
-          "c": "QUESADA JUAN CARLOS",
-          "ch": "Taller",
-          "u": 1950.16,
-          "tc": 1425,
-          "bp": 2778978
-        },
-        {
-          "f": "2026-05-11",
-          "s": 107,
-          "c": "AVELLANEDA MARIO ANTONIO",
-          "ch": "Taller",
-          "u": 600,
-          "tc": 1425,
-          "bp": 855000
-        },
-        {
-          "f": "2026-05-12",
-          "s": 107,
-          "c": "VENDRELL JOSE MARIA",
-          "ch": "Taller",
-          "u": 141.38,
-          "tc": 1420,
-          "bp": 200760
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 964.36,
-          "tc": 1435,
-          "bp": 1383857
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (LAJITAS)",
-          "ch": "Taller",
-          "u": 60,
-          "tc": 1435,
-          "bp": 86100
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "AYALA OSCAR EUGENIO",
-          "ch": "Taller",
-          "u": 450,
-          "tc": 1435,
-          "bp": 645750
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "MARELLI RODOLFO ENRIQUE",
-          "ch": "Taller",
-          "u": 60,
-          "tc": 1435,
-          "bp": 86100
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 360,
-          "tc": 1435,
-          "bp": 516600
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 300,
-          "tc": 1435,
-          "bp": 430500
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 300,
-          "tc": 1435,
-          "bp": 430500
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 360,
-          "tc": 1435,
-          "bp": 516600
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "CIA. MERCANTIL (TUCUMAN)",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1435,
-          "bp": 258300
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-11",
-          "s": 107,
-          "c": "VAP CITRUS SRL",
-          "ch": "Taller",
-          "u": 1131.04,
-          "tc": 1425,
-          "bp": 1611732
-        },
-        {
-          "f": "2026-05-11",
-          "s": 107,
-          "c": "LA LUGUENZE S.A.",
-          "ch": "Taller",
-          "u": 980.46,
-          "tc": 1425,
-          "bp": 1397156
-        },
-        {
-          "f": "2026-05-11",
-          "s": 107,
-          "c": "AVELLANEDA MARIO ANTONIO",
-          "ch": "Taller",
-          "u": 1284.7,
-          "tc": 1425,
-          "bp": 1830698
-        },
-        {
-          "f": "2026-05-12",
-          "s": 107,
-          "c": "SELLMAC SRL",
-          "ch": "Taller",
-          "u": 477.54,
-          "tc": 1420,
-          "bp": 678107
-        },
-        {
-          "f": "2026-05-12",
-          "s": 107,
-          "c": "SANTA CECILIA SRL",
-          "ch": "Taller",
-          "u": 2714.41,
-          "tc": 1420,
-          "bp": 3854462
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "LA LUGUENZE S.A.",
-          "ch": "Taller",
-          "u": 972.67,
-          "tc": 1435,
-          "bp": 1395781
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "CEBIL CON AGUA S.A.",
-          "ch": "Taller",
-          "u": 337.54,
-          "tc": 1435,
-          "bp": 484370
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "AGROPECUARIA JOSE SELEME S. A. S.",
-          "ch": "Taller",
-          "u": 1620.08,
-          "tc": 1435,
-          "bp": 2324815
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 812.54,
-          "tc": 1435,
-          "bp": 1165995
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 1052.54,
-          "tc": 1435,
-          "bp": 1510395
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 632.54,
-          "tc": 1435,
-          "bp": 907695
-        },
-        {
-          "f": "2026-05-27",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 932.54,
-          "tc": 1435,
-          "bp": 1338195
-        },
-        {
-          "f": "2026-05-28",
-          "s": 107,
-          "c": "NEOCAMPO SRL",
-          "ch": "Taller",
-          "u": 1387.27,
-          "tc": 1435,
-          "bp": 1990732
-        },
-        {
-          "f": "2026-05-28",
-          "s": 107,
-          "c": "CADINC SRL",
-          "ch": "Taller",
-          "u": 699.63,
-          "tc": 1435,
-          "bp": 1003969
-        },
-        {
-          "f": "2026-05-28",
-          "s": 107,
-          "c": "GRUPO DU S.A.S.",
-          "ch": "Taller",
-          "u": 1479.8,
-          "tc": 1435,
-          "bp": 2123513
-        },
-        {
-          "f": "2026-05-28",
-          "s": 107,
-          "c": "MATEO CONSTRUCTORA S.R.L",
-          "ch": "Taller",
-          "u": 3941.91,
-          "tc": 1435,
-          "bp": 5656641
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "AGROPECUARIA JOSE SELEME S. A. S.",
-          "ch": "Taller",
-          "u": 18999.82,
-          "tc": 1435,
-          "bp": 27264742
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "AGROPECUARIA LAS TRES SRL",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1435,
-          "bp": 258300
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 1395.87,
-          "tc": 1435,
-          "bp": 2003073
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 4736.37,
-          "tc": 1435,
-          "bp": 6796691
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 2116.45,
-          "tc": 1435,
-          "bp": 3037106
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "ELFA S.R.L.",
-          "ch": "Taller",
-          "u": 3991.28,
-          "tc": 1435,
-          "bp": 5727487
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "SAIKO S.A.",
-          "ch": "Taller",
-          "u": 472.54,
-          "tc": 1435,
-          "bp": 678095
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "AGROPECUARIA JOSE SELEME S. A. S.",
-          "ch": "Taller",
-          "u": 1097.81,
-          "tc": 1435,
-          "bp": 1575357
-        },
-        {
-          "f": "2026-05-29",
-          "s": 107,
-          "c": "SILVA SERGIO EDUARDO",
-          "ch": "Taller",
-          "u": 13045.72,
-          "tc": 1435,
-          "bp": 18720608
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 29026.179260103923,
-          "facts": 12
-        }
-      ]
-    },
-    "Daniela Humano": {
-      "com": 17103.585736596553,
-      "comUSD": 11.906487454725173,
-      "facts": 9,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 3420717.1473193103,
-      "det": [
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "AGROPECUARIA EL GUANACO S.A.",
-          "ch": "Taller",
-          "u": 317.17,
-          "tc": 1420,
-          "bp": 450381
-        },
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "AGROPECUARIA EL GUANACO S.A.",
-          "ch": "Taller",
-          "u": 180,
-          "tc": 1420,
-          "bp": 255600
-        },
-        {
-          "f": "2026-05-18",
-          "s": 101,
-          "c": "IND. JOHN DEERE ARGENTINA S.A.",
-          "ch": "Taller",
-          "u": 365.06,
-          "tc": 1425,
-          "bp": 520211
-        },
-        {
-          "f": "2026-05-19",
-          "s": 101,
-          "c": "CLUB DE CAMPO LA HOYADA DE CASTELLANOS",
-          "ch": "Taller",
-          "u": 95.59,
-          "tc": 1425,
-          "bp": 136216
-        },
-        {
-          "f": "2026-05-26",
-          "s": 101,
-          "c": "DOZER SRL",
-          "ch": "Taller",
-          "u": 360,
-          "tc": 1430,
-          "bp": 514800
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "GEOMIX S.R.L.",
-          "ch": "Taller",
-          "u": 449.52,
-          "tc": 1435,
-          "bp": 645061
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "EMAISA S.A.",
-          "ch": "Taller",
-          "u": 982.55,
-          "tc": 1435,
-          "bp": 1409959
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "CIA. MERCANTIL (EMBARCACION)",
-          "ch": "Taller",
-          "u": 0.9,
-          "tc": 1435,
-          "bp": 1292
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "CIA. MERCANTIL (SAL AG)",
-          "ch": "Taller",
-          "u": 300,
-          "tc": 1435,
-          "bp": 430500
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-12",
-          "s": 101,
-          "c": "COMPAÑIA AGRARIA SAN JOSE S.A.",
-          "ch": "Taller",
-          "u": 1859.46,
-          "tc": 1420,
-          "bp": 2640433
-        },
-        {
-          "f": "2026-05-14",
-          "s": 101,
-          "c": "GRUPO ANTA DEL PLATA S.A.",
-          "ch": "Taller",
-          "u": 609.61,
-          "tc": 1420,
-          "bp": 865646
-        },
-        {
-          "f": "2026-05-14",
-          "s": 101,
-          "c": "GRUPO ANTA DEL PLATA S.A.",
-          "ch": "Taller",
-          "u": 609.61,
-          "tc": 1420,
-          "bp": 865646
-        },
-        {
-          "f": "2026-05-14",
-          "s": 101,
-          "c": "GRUPO ANTA DEL PLATA S.A.",
-          "ch": "Taller",
-          "u": 609.61,
-          "tc": 1420,
-          "bp": 865646
-        },
-        {
-          "f": "2026-05-20",
-          "s": 101,
-          "c": "LEDESMA S.A.A.I.",
-          "ch": "Taller",
-          "u": 8784.92,
-          "tc": 1398,
-          "bp": 12281318
-        },
-        {
-          "f": "2026-05-22",
-          "s": 101,
-          "c": "CONSTRUCCIONES CIVILES Y VIALES SRL",
-          "ch": "Taller",
-          "u": 569.75,
-          "tc": 1415,
-          "bp": 806196
-        },
-        {
-          "f": "2026-05-26",
-          "s": 101,
-          "c": "LEMIRO PABLO PIETROBONI SOCIEDAD ANONIMA",
-          "ch": "Taller",
-          "u": 13928.57,
-          "tc": 1430,
-          "bp": 19917855
-        },
-        {
-          "f": "2026-05-28",
-          "s": 101,
-          "c": "TORINO MIGUEL ALBERTO",
-          "ch": "Taller",
-          "u": 1352.64,
-          "tc": 1435,
-          "bp": 1941038
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "SALES DE JUJUY SOCIEDAD ANONIMA",
-          "ch": "Taller",
-          "u": 2600,
-          "tc": 1410,
-          "bp": 3666000
-        },
-        {
-          "f": "2026-05-29",
-          "s": 101,
-          "c": "MAREMCO S.A.",
-          "ch": "Taller",
-          "u": 737.21,
-          "tc": 1435,
-          "bp": 1057896
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 17103.585736596553,
-          "facts": 9
         }
       ]
     },
     "Delgado Luis Ruben": {
       "com": 15390.560714124218,
-      "comUSD": 10.713982488000237,
+      "comUSD": 10.713960552770002,
       "facts": 14,
       "rate": 0.005,
       "esJefe": false,
@@ -22548,15 +21371,15 @@
       ]
     },
     "Almiron Leandro Pedro Alexis": {
-      "com": 14889.049640584037,
-      "comUSD": 10.364860649020281,
+      "com": 14865.900882357299,
+      "comUSD": 10.348724688685138,
       "facts": 3,
       "rate": 0.005,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 2977809.9281168072,
+      "bn": 2973180.1764714597,
       "det": [
         {
           "f": "2026-05-06",
@@ -22601,21 +21424,21 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 14889.049640584037,
+          "com": 14865.900882357299,
           "facts": 3
         }
       ]
     },
     "Alfonso Torres": {
-      "com": 2525.309955621209,
-      "comUSD": 1.7579688709111394,
+      "com": 2466.4858415578215,
+      "comUSD": 1.7170155461694596,
       "facts": 3,
       "rate": 0.0075,
       "esJefe": false,
       "canal": null,
       "esAux": false,
       "suc": null,
-      "bn": 336707.9940828279,
+      "bn": 328864.7788743762,
       "det": [
         {
           "f": "2026-05-28",
@@ -22759,250 +21582,10 @@
       "hist": [
         {
           "mes": "2026-05",
-          "com": 2525.309955621209,
+          "com": 2466.4858415578215,
           "facts": 3
         }
       ]
-    },
-    "Ramiro Borda": {
-      "com": 1681.3931848578507,
-      "comUSD": 1.170484784318337,
-      "facts": 1,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 336278.63697157014,
-      "det": [
-        {
-          "f": "2026-05-05",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 250,
-          "tc": 1415,
-          "bp": 353750
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-22",
-          "s": 108,
-          "c": "CONAL S.A",
-          "ch": "Taller",
-          "u": 516.59,
-          "tc": 1410,
-          "bp": 728392
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 769.6,
-          "tc": 1430,
-          "bp": 1100528
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 564.98,
-          "tc": 1430,
-          "bp": 807921
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 250,
-          "tc": 1430,
-          "bp": 357500
-        },
-        {
-          "f": "2026-05-27",
-          "s": 108,
-          "c": "AGD S.A",
-          "ch": "Taller",
-          "u": 769.6,
-          "tc": 1430,
-          "bp": 1100528
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 1681.3931848578507,
-          "facts": 1
-        }
-      ]
-    },
-    "Sergio Aban": {
-      "com": 603.3284852427463,
-      "comUSD": 0.42000099577075883,
-      "facts": 1,
-      "rate": 0.005,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 120665.69704854925,
-      "det": [
-        {
-          "f": "2026-05-14",
-          "s": 104,
-          "c": "BERRUEZO ALVARO JOSE",
-          "ch": "Mostrador",
-          "u": 117.76,
-          "tc": 1420,
-          "bp": 167219
-        }
-      ],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-02",
-          "s": 104,
-          "c": "GUTIERREZ HERMANOS S.R.L.",
-          "ch": "Mostrador",
-          "u": 17.17,
-          "tc": 1420,
-          "bp": 24381
-        },
-        {
-          "f": "2026-05-02",
-          "s": 104,
-          "c": "GUTIERREZ HERMANOS S.R.L.",
-          "ch": "Mostrador",
-          "u": 239.46,
-          "tc": 1420,
-          "bp": 340033
-        },
-        {
-          "f": "2026-05-02",
-          "s": 104,
-          "c": "FICOSECO BERNACHEA MARIANO GABRIEL",
-          "ch": "Mostrador",
-          "u": 347.39,
-          "tc": 1420,
-          "bp": 493294
-        },
-        {
-          "f": "2026-05-09",
-          "s": 104,
-          "c": "GUTIERREZ HERMANOS S.R.L.",
-          "ch": "Mostrador",
-          "u": 175.6,
-          "tc": 1425,
-          "bp": 250230
-        },
-        {
-          "f": "2026-05-09",
-          "s": 104,
-          "c": "SURGEN S.R.L.",
-          "ch": "Mostrador",
-          "u": 359.47,
-          "tc": 1425,
-          "bp": 512245
-        },
-        {
-          "f": "2026-05-23",
-          "s": 104,
-          "c": "J y G LOMBARDICH S.A",
-          "ch": "Mostrador",
-          "u": 75.52,
-          "tc": 1430,
-          "bp": 107994
-        },
-        {
-          "f": "2026-05-28",
-          "s": 104,
-          "c": "GOJAM S.A.",
-          "ch": "Mostrador",
-          "u": 53.72,
-          "tc": 1435,
-          "bp": 77088
-        },
-        {
-          "f": "2026-05-30",
-          "s": 104,
-          "c": "BERRUEZO ALVARO JOSE",
-          "ch": "Mostrador",
-          "u": 574.23,
-          "tc": 1435,
-          "bp": 824020
-        },
-        {
-          "f": "2026-05-30",
-          "s": 104,
-          "c": "IND. FRIGORIFICAS NORTE GRANDE S.A.",
-          "ch": "Mostrador",
-          "u": 211.17,
-          "tc": 1435,
-          "bp": 303029
-        }
-      ],
-      "hist": [
-        {
-          "mes": "2026-05",
-          "com": 603.3284852427463,
-          "facts": 1
-        }
-      ]
-    },
-    "Joaquin Cardozo": {
-      "com": 0,
-      "comUSD": 0,
-      "facts": 0,
-      "rate": 0,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 0,
-      "det": [],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-19",
-          "s": 101,
-          "c": "CE y BA S.R.L.",
-          "ch": "Taller",
-          "u": 2609.83,
-          "tc": 1425,
-          "bp": 3719008
-        }
-      ],
-      "hist": []
-    },
-    "Astún Alfredo Ignacio": {
-      "com": 0,
-      "comUSD": 0,
-      "facts": 0,
-      "rate": 0,
-      "esJefe": false,
-      "canal": null,
-      "esAux": false,
-      "suc": null,
-      "bn": 0,
-      "det": [],
-      "pendAnt": [],
-      "pend": [
-        {
-          "f": "2026-05-20",
-          "s": 107,
-          "c": "SIEMPRE VERDE S.A.",
-          "ch": "Mostrador",
-          "u": 1794.66,
-          "tc": 1425,
-          "bp": 2557391
-        }
-      ],
-      "hist": []
     },
     "Sebastian Arbilla": {
       "com": 0,
@@ -23030,15 +21613,15 @@
       "hist": []
     },
     "Federico Dumeyniew": {
-      "com": 926869.8957750001,
-      "comUSD": 645.2310618465364,
+      "com": 894598.0643175001,
+      "comUSD": 622.7640792116198,
       "facts": 0,
       "rate": 0.0015,
       "esJefe": true,
       "canal": "Mostrador",
       "esAux": false,
       "suc": null,
-      "bn": 617913263.85,
+      "bn": 596398709.5450001,
       "det": [],
       "pendAnt": [],
       "pend": [],
@@ -23048,31 +21631,23 @@
   "historial": [
     {
       "mes": "2026-05",
-      "com": 4209754.2734047,
-      "facts": 994
+      "com": 3917563.803201867,
+      "facts": 944
     }
   ],
   "rankingSuc": {
     "101": [
       {
         "v": "Rivero Ruben Eduardo",
-        "com": 118976.80726865727
+        "com": 110424.4704617971
       },
       {
         "v": "Roberto Solaliga",
-        "com": 42694.06087833424
-      },
-      {
-        "v": "Ignacio Lizondo",
-        "com": 27396.763508103657
-      },
-      {
-        "v": "Daniela Humano",
-        "com": 17103.585736596553
+        "com": 39502.06879451925
       },
       {
         "v": "Diego Diaz",
-        "com": 11923.945512462444
+        "com": 11133.207215525501
       }
     ],
     "102": [
@@ -23092,37 +21667,21 @@
     "103": [
       {
         "v": "Martinez Gabriel Emanuel",
-        "com": 990166.8491697679
+        "com": 981247.6435796292
       },
       {
         "v": "CARLOS SPECOGNA",
-        "com": 246639.61043240302
-      },
-      {
-        "v": "Alderete Nicolas Bernardo",
-        "com": 107648.45398225522
-      },
-      {
-        "v": "Ignacio Lizondo",
-        "com": 9625.6619905737
+        "com": 244417.9349703707
       }
     ],
     "104": [
       {
         "v": "Barros Julio Dante",
-        "com": 344031.9128330068
+        "com": 338284.95538182027
       },
       {
         "v": "Fontanini Hugo Luis",
-        "com": 162539.3471464433
-      },
-      {
-        "v": "Mario Rios",
-        "com": 30333.825085307184
-      },
-      {
-        "v": "Sergio Aban",
-        "com": 603.3284852427463
+        "com": 167488.81191817968
       }
     ],
     "105": [
@@ -23138,33 +21697,25 @@
     "107": [
       {
         "v": "Santillán Nicolás",
-        "com": 370278.4422829247
+        "com": 361653.24311654904
       },
       {
         "v": "Pablo Moyano",
-        "com": 139720.60313655718
-      },
-      {
-        "v": "Tomas Varg",
-        "com": 29026.179260103923
+        "com": 136465.97663907905
       },
       {
         "v": "Alfonso Torres",
-        "com": 2525.309955621209
+        "com": 2466.4858415578215
       }
     ],
     "108": [
       {
         "v": "Ibáñez Luis Oscar",
-        "com": 41297.97967455812
+        "com": 41233.771617642706
       },
       {
         "v": "Almiron Leandro Pedro Alexis",
-        "com": 14889.049640584037
-      },
-      {
-        "v": "Ramiro Borda",
-        "com": 1681.3931848578507
+        "com": 14865.900882357299
       }
     ]
   }
