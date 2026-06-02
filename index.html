@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Vendedores — Comisiones John Deere</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d1117;--s1:#161b22;--s2:#21262d;--s3:#2d333b;
+  --bd:#30363d;--fc:#58a6ff;
+  --tx:#e6edf3;--sf:#b1bac4;--mu:#8b949e;
+  --gn:#3fb950;--gd:#2ea043;--gb:#0d2119;
+  --bl:#58a6ff;--bb:#051d4d;
+  --rd:#f85149;--rb:#1c0000;
+  --yw:#d29922;--yb:#2d1f0a;
+  --r:8px;--F:'Outfit',sans-serif;--M:'JetBrains Mono',monospace;
+}
+body{background:var(--bg);color:var(--tx);font-family:var(--F);font-size:15px;line-height:1.5;min-height:100vh}
+
+/* HEADER */
+.hdr{background:linear-gradient(135deg,#0d2119,#0d1117);border-bottom:1px solid var(--bd);padding:16px 28px;display:flex;align-items:center;justify-content:space-between}
+.hdr-l{display:flex;align-items:center;gap:12px}
+.hdr-logo{width:38px;height:38px;background:var(--gd);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.hdr h1{font-size:16px;font-weight:700}
+.hdr p{font-size:11px;color:var(--mu)}
+.usr-badge{display:flex;align-items:center;gap:7px;background:var(--s2);border:1px solid var(--bd);border-radius:6px;padding:6px 12px;font-size:12px;color:var(--sf)}
+.usr-av{width:22px;height:22px;border-radius:50%;background:var(--gb);border:1px solid rgba(63,185,80,.3);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:var(--gn)}
+.btn-out{background:none;color:var(--mu);border:1px solid var(--bd);border-radius:6px;padding:6px 14px;font-size:12px;font-family:var(--F);cursor:pointer;transition:all .15s}
+.btn-out:hover{border-color:var(--rd);color:var(--rd)}
+
+/* LOGIN */
+#vlogin{display:flex;align-items:center;justify-content:center;min-height:100vh}
+.login-box{background:var(--s1);border:1px solid var(--bd);border-radius:12px;padding:40px;width:360px;text-align:center}
+.login-logo{width:60px;height:60px;background:var(--gd);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 20px}
+.login-box h2{font-size:20px;font-weight:700;margin-bottom:4px}
+.login-box .sub{font-size:13px;color:var(--mu);margin-bottom:28px}
+.lf{margin-bottom:14px;text-align:left}
+.lf label{display:block;font-size:11px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.lf input{width:100%;background:var(--s2);border:1px solid var(--bd);border-radius:6px;padding:10px 13px;color:var(--tx);font-family:var(--F);font-size:14px;outline:none;transition:border-color .15s}
+.lf input:focus{border-color:var(--fc)}
+.login-err{color:var(--rd);font-size:12px;margin-bottom:12px;min-height:18px}
+.btn-login{width:100%;background:var(--gd);color:#fff;border:none;border-radius:var(--r);padding:12px;font-size:14px;font-weight:600;font-family:var(--F);cursor:pointer;transition:all .2s;margin-top:4px}
+.btn-login:hover{background:var(--gn)}
+.login-footer{font-size:11px;color:var(--mu);margin-top:20px}
+
+/* LOADING */
+#vload{display:flex;align-items:center;justify-content:center;min-height:80vh;text-align:center}
+.spin{width:40px;height:40px;border:3px solid var(--bd);border-top-color:var(--gn);border-radius:50%;animation:sp .8s linear infinite;margin:0 auto 16px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.load-msg{color:var(--mu);font-size:13px}
+
+/* PORTAL */
+.wrap{max-width:900px;margin:0 auto;padding:24px 20px}
+.cur-tog{display:flex;background:var(--s2);border:1px solid var(--bd);border-radius:6px;overflow:hidden}
+.cur-btn{padding:5px 13px;font-size:12px;font-weight:600;font-family:var(--F);border:none;background:none;color:var(--mu);cursor:pointer;transition:all .15s}
+.cur-btn.on{background:var(--s3);color:var(--tx)}
+
+/* HERO */
+.vp-hero{background:linear-gradient(135deg,var(--gb),var(--s1));border:1px solid var(--bd);border-radius:12px;padding:28px;margin-bottom:20px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.vp-av{width:56px;height:56px;border-radius:50%;background:var(--gb);border:2px solid var(--gn);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:var(--gn);flex-shrink:0}
+.vp-name{font-size:22px;font-weight:700}
+.vp-sub{font-size:13px;color:var(--mu);margin-top:3px}
+.vp-com{margin-left:auto;text-align:right}
+.vp-com-v{font-family:var(--M);font-size:28px;font-weight:500;color:var(--gn)}
+.vp-com-l{font-size:11px;color:var(--mu);text-transform:uppercase;letter-spacing:.8px}
+
+/* STATS */
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.sc{background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:14px 16px}
+.sc-l{font-size:10px;font-weight:700;color:var(--mu);text-transform:uppercase;letter-spacing:.8px;margin-bottom:5px}
+.sc-v{font-family:var(--M);font-size:19px;font-weight:500}
+.sc-v.g{color:var(--gn)}.sc-v.y{color:var(--yw)}.sc-v.b{color:var(--bl)}
+
+/* TABS */
+.tabs{display:flex;gap:2px;border-bottom:1px solid var(--bd);margin-bottom:20px}
+.tb{background:none;border:none;padding:8px 14px;font-size:13px;font-weight:500;font-family:var(--F);color:var(--mu);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .15s}
+.tb:hover{color:var(--sf)}.tb.on{color:var(--gn);border-bottom-color:var(--gn)}
+.tp{display:none}.tp.on{display:block}
+
+/* TABLES */
+.tw{border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;margin-bottom:16px}
+.dt{width:100%;border-collapse:collapse;font-size:13px}
+.dt th{text-align:left;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--mu);padding:9px 12px;border-bottom:1px solid var(--bd);white-space:nowrap;background:var(--s1)}
+.dt th.r{text-align:right}
+.dt td{padding:7px 12px;border-bottom:1px solid var(--s2);color:var(--sf)}
+.dt td.r{text-align:right;font-family:var(--M);font-size:12px;color:var(--tx)}
+.dt td.g{text-align:right;font-family:var(--M);font-size:12px;color:var(--gn)}
+.dt td.y{text-align:right;font-family:var(--M);font-size:12px;color:var(--yw)}
+.dt tbody tr:hover td{background:var(--s2)}
+.dt tr.tot td{background:var(--s3);border-top:2px solid var(--gd);font-weight:700;font-size:14px;color:var(--tx)}
+.bx{display:inline-block;padding:2px 6px;border-radius:20px;font-size:10px;font-weight:700;letter-spacing:.3px;text-transform:uppercase}
+.bg{background:var(--gb);color:var(--gn);border:1px solid rgba(63,185,80,.3)}
+.bb{background:var(--bb);color:var(--bl);border:1px solid rgba(88,166,255,.3)}
+.more{display:block;width:100%;padding:8px;background:none;border:1px solid var(--bd);border-radius:6px;color:var(--mu);font-size:11px;font-family:var(--F);cursor:pointer;margin-top:6px;transition:all .15s}
+.more:hover{border-color:var(--bl);color:var(--bl)}
+
+/* HISTORIAL */
+.hbar{display:flex;align-items:flex-end;gap:6px;padding:12px 0;min-height:120px}
+.hbc{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1}
+.hbb{width:100%;background:var(--gd);border-radius:4px 4px 0 0;min-height:4px}
+.hbc.sel .hbb{background:var(--bl)}
+.hbl{font-size:9px;color:var(--mu);font-family:var(--M);text-align:center}
+.hbv{font-size:9px;color:var(--sf);font-family:var(--M)}
+
+/* RANKING */
+.rank-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:6px;margin-bottom:6px;background:var(--s2);border:1px solid var(--bd)}
+.rank-item.me{border-color:var(--gn);background:var(--gb)}
+.rank-n{font-family:var(--M);font-size:13px;font-weight:700;color:var(--mu);width:24px;text-align:center}
+.rank-n.gold{color:#ffd700}.rank-n.silver{color:#c0c0c0}.rank-n.bronze{color:#cd7f32}
+.rank-bar-wrap{flex:1;background:var(--s3);border-radius:4px;height:8px;overflow:hidden}
+.rank-bar{height:100%;background:var(--gd);border-radius:4px}
+.rank-item.me .rank-bar{background:var(--gn)}
+.rank-val{font-family:var(--M);font-size:12px;color:var(--tx);min-width:90px;text-align:right}
+.rank-name{font-size:12px;color:var(--sf);min-width:90px}
+
+/* MISC */
+.view{display:none}.view.on{display:block}
+.empty{padding:40px;text-align:center;color:var(--mu);font-size:14px}
+.alert{background:var(--yb);border:1px solid rgba(210,153,34,.4);border-radius:var(--r);padding:14px 18px;font-size:13px;color:var(--yw);margin-bottom:16px}
+@media(max-width:600px){.sgrid{grid-template-columns:1fr 1fr!important}.vp-hero{flex-direction:column;text-align:center}.vp-com{margin-left:0}.wrap{padding:12px}.tabs{overflow-x:auto}}
+</style>
+</head>
+<body>
+
+<!-- HEADER (oculto hasta login) -->
+<div id="main-hdr" style="display:none">
+<header class="hdr">
+  <div class="hdr-l">
+    <div class="hdr-logo">🌿</div>
+    <div><h1>Portal de Comisiones</h1><p>John Deere — Mostrador & Taller</p></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px">
+    <div class="cur-tog">
+      <button class="cur-btn on" onclick="setCur('ARS')">$ Pesos</button>
+      <button class="cur-btn" onclick="setCur('USD')">USD</button>
+    </div>
+    <div class="usr-badge">
+      <div class="usr-av" id="usr-av"></div>
+      <span id="usr-name"></span>
+    </div>
+    <button class="btn-out" onclick="logout()">Salir</button>
+  </div>
+</header>
+</div>
+
+<!-- LOGIN -->
+<div id="vlogin" class="view on" style="display:flex">
+  <div class="login-box">
+    <div class="login-logo">🌿</div>
+    <h2>Portal de Comisiones</h2>
+    <p class="sub">Cia. Mercantil AISA — John Deere</p>
+    <div class="lf"><label>Usuario</label><input type="text" id="l-user" placeholder="tu usuario" autocomplete="username"></div>
+    <div class="lf"><label>Contraseña</label><input type="password" id="l-pass" placeholder="••••••" autocomplete="current-password"></div>
+    <div class="login-err" id="l-err"></div>
+    <button class="btn-login" id="l-btn">Ingresar</button>
+    <p class="login-footer">Tus datos son privados — solo vos podés ver tu información</p>
+  </div>
+</div>
+
+<!-- CARGANDO DATOS -->
+<div id="vload" class="view">
+  <div id="vload-inner">
+    <div class="spin"></div>
+    <p class="load-msg" id="lmsg">Cargando datos...</p>
+  </div>
+</div>
+
+<!-- PORTAL VENDEDOR -->
+<div id="vportal" class="view">
+<div class="wrap">
+  <div class="vp-hero" id="vp-hero"></div>
+  <div class="sgrid" id="vp-stats"></div>
+  <div class="tabs">
+    <button class="tb on" data-t="cobradas">✅ Cobradas</button>
+    <button class="tb" data-t="pendientes">⏳ Pendientes</button>
+    <button class="tb" data-t="historial">📈 Mi historial</button>
+    <button class="tb" data-t="ranking">🏆 Ranking</button>
+  </div>
+  <div id="t-cobradas" class="tp on"></div>
+  <div id="t-pendientes" class="tp"></div>
+  <div id="t-historial" class="tp"></div>
+  <div id="t-ranking" class="tp"></div>
+</div>
+</div>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+function ini(n){return(n||'').split(' ').slice(0,2).map(w=>w[0]||'').join('').toUpperCase()||'?'}
+function setView(id){
+  $$('.view').forEach(v=>{v.classList.remove('on');v.style.display='none'});
+  const el=$('#'+id);el.classList.add('on');el.style.display=(id==='vlogin')?'flex':(id==='vload')?'flex':'block';
+  $('#main-hdr').style.display=(id==='vportal')?'block':'none';
+}
+
+let CUR='ARS',DATOS=null,SESSION=null;
+const JSON_URL='https://raw.githubusercontent.com/rmateocia/comisiones/main/resultados.json';
+function fmtP(n){if(!n||isNaN(n))return'—';const a=Math.abs(n),s=a.toLocaleString('es-AR',{minimumFractionDigits:0,maximumFractionDigits:0});return(n<0?'(':'')+'$ '+s+(n<0?')':'')}
+function fmtU(n){if(n==null||isNaN(n))return'—';return'USD '+(Math.abs(n)).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function fmtV(p){return CUR==='ARS'?fmtP(p):fmtU(p/(DATOS?DATOS.tcRef:1))}
+function fmtPct(r){return(r*100).toFixed(2)+'%'}
+function sumBy(a,f){return a.reduce((s,r)=>s+(f(r)||0),0)}
+function setCur(c){CUR=c;$$('.cur-btn').forEach(b=>b.classList.toggle('on',b.textContent.includes(c==='ARS'?'Pesos':'USD')));if(SESSION&&DATOS)renderPortal(DATOS,SESSION)}
+
+// Hash (mismo algoritmo que el admin)
+async function hashPass(pass){
+  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pass));
+  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+}
+
+async function doLogin(){
+  const u=$('#l-user').value.trim().toLowerCase();
+  const p=$('#l-pass').value.trim();
+  if(!u||!p){$('#l-err').textContent='Ingresá usuario y contraseña';return}
+  $('#l-btn').disabled=true;$('#l-btn').textContent='Verificando...';
+  try{
+    // Primero cargar los datos para tener los usuarios
+    const res=await fetch(JSON_URL+'?t='+Date.now());
+    if(!res.ok)throw new Error(`HTTP ${res.status}`);
+    DATOS=await res.json();
+    // Validar contra usuarios del JSON
+    const usuarios=DATOS.usuarios||[];
+    const h=await hashPass(p);
+    const match=usuarios.find(x=>x.usuario===u&&x.passHash===h);
+    if(!match){$('#l-err').textContent='Usuario o contraseña incorrectos';$('#l-btn').disabled=false;$('#l-btn').textContent='Ingresar';return}
+    SESSION={usuario:u,nombre:match.nombre};
+    $('#l-err').textContent='';$('#l-user').value='';$('#l-pass').value='';
+    $('#usr-av').textContent=ini(match.nombre);
+    $('#usr-name').textContent=match.nombre;
+    renderPortal(DATOS,SESSION);
+    setView('vportal');
+  }catch(e){
+    console.error(e);
+    if(e.message.includes('404'))$('#l-err').textContent='Los datos aún no están disponibles. El administrador no publicó la liquidación todavía.';
+    else if(e.message.includes('Failed to fetch'))$('#l-err').textContent='Sin conexión a internet. Verificá tu red.';
+    else $('#l-err').textContent='Error: '+e.message;
+  }
+  $('#l-btn').disabled=false;$('#l-btn').textContent='Ingresar';
+}
+
+function logout(){SESSION=null;DATOS=null;setView('vlogin')}
+
+function mostrarError(msg){
+  setView('vportal');
+  $('#vp-hero').innerHTML=`<div class="vp-av">${ini(SESSION.nombre)}</div><div><div class="vp-name">${SESSION.nombre}</div><div class="vp-sub" style="color:var(--yw)">⏳ ${msg}</div></div>`;
+  $('#vp-stats').innerHTML='';
+  $$('.tp').forEach(t=>t.innerHTML='');
+  $('#t-cobradas').innerHTML=`<div class="empty">${msg}</div>`;
+}
+
+function renderPortal(D,sess){
+  const nombre=sess.nombre;
+  const vd=D.vendedores[nombre];
+  if(!vd){mostrarError('No hay datos disponibles para tu usuario en la liquidación actual.');return}
+  const rate=vd.rate||0;
+  const com=vd.com||0;
+  const pendCom=sumBy(vd.pend||[],r=>Math.abs(r.bp||0)*rate);
+  const pendUSD=sumBy(vd.pend||[],r=>Math.abs(r.u||0));
+  const hist=vd.hist||[];
+  const mes=D.mes;
+
+  // Hero
+  let subLine='';
+  if(vd.esJefe)subLine=`Jefatura — Canal ${vd.canal} · Tasa ${fmtPct(rate)}`;
+  else if(vd.esAux)subLine=`Auxiliar depósito — Suc. ${vd.suc} · Tasa ${fmtPct(rate)}`;
+  else subLine=`Tasa ${fmtPct(rate)} · ${vd.facts||0} facturas comisionadas · Mes: ${mes}`;
+  $('#vp-hero').innerHTML=`
+    <div class="vp-av">${ini(nombre)}</div>
+    <div style="flex:1"><div class="vp-name">${nombre}</div><div class="vp-sub">${subLine}</div></div>
+    <div class="vp-com">
+      <div class="vp-com-l">Comisión ${mes}</div>
+      <div class="vp-com-v">${fmtV(com)}</div>
+      ${pendCom>0?`<div style="font-size:12px;color:var(--yw);margin-top:3px">+ ${fmtV(pendCom)} esperado</div>`:''}
+    </div>`;
+
+  // Stats
+  const mejorMes=hist.length?hist.reduce((a,b)=>b.com>a.com?b:a,hist[0]):null;
+  const totalHist=sumBy(hist,h=>h.com||0);
+  $('#vp-stats').innerHTML=`
+    <div class="sc"><div class="sc-l">Este mes</div><div class="sc-v g">${fmtV(com)}</div></div>
+    <div class="sc"><div class="sc-l">Pendiente esperado</div><div class="sc-v y">${fmtV(pendCom)}</div></div>
+    <div class="sc"><div class="sc-l">Pend. USD</div><div class="sc-v b">${fmtU(pendUSD)}</div></div>
+    <div class="sc"><div class="sc-l">Mejor mes</div><div class="sc-v">${mejorMes?fmtV(mejorMes.com):'—'}</div></div>`;
+
+  // Cobradas
+  if(vd.esJefe){
+    $('#t-cobradas').innerHTML=`<div style="padding:32px;text-align:center"><div style="font-size:13px;color:var(--mu);margin-bottom:12px">Comisión calculada sobre el total cobrado del canal ${vd.canal}</div><div style="font-size:36px;font-weight:700;color:var(--gn);font-family:var(--M)">${fmtV(com)}</div><div style="font-size:13px;color:var(--mu);margin-top:8px">Base: ${fmtV(vd.bn||0)} · Tasa: ${fmtPct(rate)}</div></div>`;
+  } else if(vd.esAux){
+    $('#t-cobradas').innerHTML=`<div style="padding:32px;text-align:center"><div style="font-size:13px;color:var(--mu);margin-bottom:12px">Comisión sobre el total cobrado de la sucursal ${vd.suc}</div><div style="font-size:36px;font-weight:700;color:var(--gn);font-family:var(--M)">${fmtV(com)}</div><div style="font-size:13px;color:var(--mu);margin-top:8px">Base: ${fmtV(vd.bn||0)} · Tasa: ${fmtPct(rate)}</div></div>`;
+  } else {
+    const det=vd.det||[];
+    const pAnt=vd.pendAnt||[];
+    let h='';
+    if(det.length){
+      h+=`<p style="font-size:12px;color:var(--mu);margin-bottom:12px">${det.length} facturas · comisión total ${fmtV(com)}</p>`;
+      h+=mkTbl(det,rate,true);
+    }
+    if(pAnt.length){
+      h+=`<div style="font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--bl);margin:16px 0 8px">🔄 Cobradas de meses anteriores (${pAnt.length})</div>`;
+      h+=mkTbl(pAnt,rate,true);
+    }
+    if(!det.length&&!pAnt.length)h='<div class="empty">Sin facturas comisionadas este mes.</div>';
+    $('#t-cobradas').innerHTML=h;
+  }
+
+  // Pendientes
+  const pend=vd.pend||[];
+  if(pend.length){
+    let h=`<div class="alert">⏳ Tenés ${pend.length} factura${pend.length>1?'s':''} pendiente${pend.length>1?'s':''} de cobro por USD ${fmtU(pendUSD).replace('USD ','')} — cuando el cliente pague, la comisión esperada de ${fmtV(pendCom)} se liquida en el próximo mes.</div>`;
+    h+=mkTbl(pend,rate,false);
+    $('#t-pendientes').innerHTML=h;
+  } else {
+    $('#t-pendientes').innerHTML='<div class="empty">✅ No tenés facturas pendientes de cobro.</div>';
+  }
+
+  // Historial
+  if(hist.length){
+    const maxC=Math.max(...hist.map(h=>h.com||0))||1;
+    let h=`<div style="background:var(--s1);border:1px solid var(--bd);border-radius:var(--r);padding:20px;margin-bottom:16px"><div class="hbar">`;
+    for(const m of hist){
+      const pct=Math.max(8,(m.com/maxC)*120);
+      const[y,mo]=m.mes.split('-');
+      const nom=new Date(y,mo-1,1).toLocaleString('es-AR',{month:'short'}).slice(0,3);
+      h+=`<div class="hbc${m.mes===mes?' sel':''}"><div class="hbv">${fmtV(m.com).replace('$ ','$').replace('USD ','')}</div><div class="hbb" style="height:${pct}px"></div><div class="hbl">${nom}<br>${y.slice(2)}</div></div>`;
+    }
+    h+=`</div></div>`;
+    h+=`<div class="tw"><table class="dt"><thead><tr><th>Mes</th><th class="r">Facts.</th><th class="r">Comisión</th></tr></thead><tbody>`;
+    for(const m of [...hist].reverse()){h+=`<tr${m.mes===mes?' style="font-weight:600"':''}><td>${m.mes}</td><td class="r">${m.facts||0}</td><td class="g">${fmtV(m.com||0)}</td></tr>`}
+    h+=`<tr class="tot"><td>Total histórico</td><td></td><td class="g">${fmtV(totalHist)}</td></tr></tbody></table></div>`;
+    $('#t-historial').innerHTML=h;
+  } else {
+    $('#t-historial').innerHTML='<div class="empty">Sin historial disponible todavía.</div>';
+  }
+
+  // Ranking anónimo
+  const rankSuc=D.rankingSuc||{};
+  // Buscar en qué sucursales está este vendedor
+  let miSuc=null;
+  for(const[suc,rows]of Object.entries(rankSuc)){if(rows.some(r=>r.v===nombre)){miSuc=suc;break}}
+  if(miSuc&&rankSuc[miSuc]&&rankSuc[miSuc].length>1){
+    const rows=rankSuc[miSuc];
+    const maxCom=Math.max(...rows.map(r=>r.com||0))||1;
+    let h=`<p style="font-size:12px;color:var(--mu);margin-bottom:14px">Ranking anónimo — Sucursal ${miSuc}</p>`;
+    rows.forEach((r,i)=>{
+      const isMe=r.v===nombre;
+      const pct=Math.max(4,(r.com/maxCom)*100);
+      const medal=i===0?'gold':i===1?'silver':i===2?'bronze':'';
+      h+=`<div class="rank-item${isMe?' me':''}">
+        <div class="rank-n${medal?' '+medal:''}">${i+1}</div>
+        <div class="rank-name">${isMe?'<strong style="color:var(--gn)">Vos</strong>':`Vendedor ${i+1}`}</div>
+        <div class="rank-bar-wrap"><div class="rank-bar" style="width:${pct}%"></div></div>
+        <div class="rank-val">${fmtV(r.com)}</div>
+      </div>`;
+    });
+    $('#t-ranking').innerHTML=h;
+  } else {
+    $('#t-ranking').innerHTML='<div class="empty">Ranking disponible cuando haya más de un vendedor en tu sucursal.</div>';
+  }
+
+  // Activar tabs
+  $$('.tabs .tb').forEach(b=>b.addEventListener('click',function(){
+    $$('.tabs .tb').forEach(x=>x.classList.remove('on'));
+    $$('.tp').forEach(x=>x.classList.remove('on'));
+    this.classList.add('on');$('#t-'+this.dataset.t).classList.add('on');
+  },{once:false}));
+}
+
+function mkTbl(rows,rate,comed){
+  const MAX=20,vis=rows.slice(0,MAX),rest=rows.length-MAX;
+  const id='t'+Math.random().toString(36).slice(2);
+  let h=`<div class="tw"><table class="dt" id="${id}"><thead><tr>
+    <th>Fecha</th><th>Suc.</th><th>Cliente</th><th>Canal</th>
+    <th class="r">USD</th><th class="r">TC</th><th class="r">Base</th>
+    <th class="r">${comed?'Comisión':'Esperada'}</th>
+    </tr></thead><tbody>`;
+  for(const r of vis)h+=mkRow(r,rate,comed);
+  h+=`</tbody></table></div>`;
+  if(rest>0){const enc=encodeURIComponent(JSON.stringify(rows.slice(MAX)));h+=`<button class="more" onclick="expandT(this,'${id}',decodeURIComponent('${enc}'),${rate},${comed})">Ver ${rest} más...</button>`}
+  return h;
+}
+function mkRow(r,rate,comed){
+  const bp=r.bp||0,u=r.u||0,tc=r.tc||1,com=Math.abs(bp)*rate;
+  const f=CUR==='ARS'?v=>fmtP(v):v=>fmtU(v/(DATOS?DATOS.tcRef:1));
+  return`<tr>
+    <td>${r.f||''}</td><td>${r.s||''}</td>
+    <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${r.c||''}</td>
+    <td><span class="bx ${r.ch==='Taller'?'bb':'bg'}">${r.ch||''}</span></td>
+    <td class="r">${fmtU(Math.abs(u))}</td>
+    <td class="r">${tc.toLocaleString('es-AR',{maximumFractionDigits:0})}</td>
+    <td class="r">${f(bp)}</td>
+    <td class="${comed?'g':'y'}">${f(com)}</td>
+  </tr>`;
+}
+function expandT(btn,id,json,rate,comed){
+  const rows=JSON.parse(json),tbody=document.getElementById(id).querySelector('tbody');
+  rows.forEach(r=>{const tr=document.createElement('tr');tr.innerHTML=mkRow(r,rate,comed).replace(/^<tr>/,'').replace(/<\/tr>$/,'');tbody.appendChild(tr)});
+  btn.remove();
+}
+
+document.addEventListener('DOMContentLoaded',()=>{
+  $('#l-btn').addEventListener('click',()=>doLogin());
+  $('#l-pass').addEventListener('keydown',e=>{if(e.key==='Enter')doLogin()});
+  $('#l-user').addEventListener('keydown',e=>{if(e.key==='Enter')$('#l-pass').focus()});
+});
+</script>
+</body>
+</html>
