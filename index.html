@@ -208,12 +208,18 @@ function fmtU(n){if(n==null||isNaN(n))return'—';return'USD '+(Math.abs(n)).toL
 function fmtV(p){return CUR==='ARS'?fmtP(p):fmtU(p/(DATOS?DATOS.tcRef:1))}
 function fmtPct(r){return(r*100).toFixed(2)+'%'}
 function sumBy(a,f){return a.reduce((s,r)=>s+(f(r)||0),0)}
-function setCur(c){CUR=c;$$('.cur-btn').forEach(b=>b.classList.toggle('on',b.textContent.includes(c==='ARS'?'Pesos':'USD')));if(SESSION&&DATOS)renderPortal(DATOS,SESSION)}
+function setCur(c){CUR=c;$$('.cur-btn').forEach(b=>b.classList.toggle('on',b.textContent.includes(c==='ARS'?'Pesos':'USD')));if(SESSION&&DATOS)renderPortal(DATOS)}
 
-// Hash (mismo algoritmo que el admin)
-async function hashPass(pass){
-  const buf=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(pass));
-  return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join('');
+// Descifrado — la contraseña correcta es la única forma de leer los datos
+const fromB64=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+async function deriveKey(pass,salt){
+  const km=await crypto.subtle.importKey('raw',new TextEncoder().encode(pass),'PBKDF2',false,['deriveKey']);
+  return crypto.subtle.deriveKey({name:'PBKDF2',salt,iterations:150000,hash:'SHA-256'},km,{name:'AES-GCM',length:256},false,['decrypt']);
+}
+async function decryptEntry(pass,entry){
+  const key=await deriveKey(pass,fromB64(entry.salt));
+  const dec=await crypto.subtle.decrypt({name:'AES-GCM',iv:fromB64(entry.iv)},key,fromB64(entry.blob));
+  return JSON.parse(new TextDecoder().decode(dec));
 }
 
 async function doLogin(){
@@ -222,20 +228,25 @@ async function doLogin(){
   if(!u||!p){$('#l-err').textContent='Ingresá usuario y contraseña';return}
   $('#l-btn').disabled=true;$('#l-btn').textContent='Verificando...';
   try{
-    // Primero cargar los datos para tener los usuarios
     const res=await fetch(JSON_URL+'?t='+Date.now());
     if(!res.ok)throw new Error(`HTTP ${res.status}`);
-    DATOS=await res.json();
-    // Validar contra usuarios del JSON
-    const usuarios=DATOS.usuarios||[];
-    const h=await hashPass(p);
-    const match=usuarios.find(x=>x.usuario===u&&x.passHash===h);
-    if(!match){$('#l-err').textContent='Usuario o contraseña incorrectos';$('#l-btn').disabled=false;$('#l-btn').textContent='Ingresar';return}
-    SESSION={usuario:u,nombre:match.nombre};
+    const raw=await res.json();
+    const entry=(raw.entradas||[]).find(x=>x.u===u);
+    if(!entry){$('#l-err').textContent='Usuario o contraseña incorrectos';$('#l-btn').disabled=false;$('#l-btn').textContent='Ingresar';return}
+    let payload;
+    try{
+      payload=await decryptEntry(p,entry);
+    }catch(_){
+      // Descifrado falló = contraseña incorrecta
+      $('#l-err').textContent='Usuario o contraseña incorrectos';
+      $('#l-btn').disabled=false;$('#l-btn').textContent='Ingresar';return;
+    }
+    DATOS=payload;
+    SESSION={usuario:u,nombre:payload.nombre};
     $('#l-err').textContent='';$('#l-user').value='';$('#l-pass').value='';
-    $('#usr-av').textContent=ini(match.nombre);
-    $('#usr-name').textContent=match.nombre;
-    renderPortal(DATOS,SESSION);
+    $('#usr-av').textContent=ini(payload.nombre);
+    $('#usr-name').textContent=payload.nombre;
+    renderPortal(payload);
     setView('vportal');
   }catch(e){
     console.error(e);
@@ -256,9 +267,9 @@ function mostrarError(msg){
   $('#t-cobradas').innerHTML=`<div class="empty">${msg}</div>`;
 }
 
-function renderPortal(D,sess){
-  const nombre=sess.nombre;
-  const vd=D.vendedores[nombre];
+function renderPortal(D){
+  const nombre=D.nombre;
+  const vd=D.vd;
   if(!vd){mostrarError('No hay datos disponibles para tu usuario en la liquidación actual.');return}
   const rate=vd.rate||0;
   const com=vd.com||0;
@@ -267,11 +278,22 @@ function renderPortal(D,sess){
   const hist=vd.hist||[];
   const mes=D.mes;
 
+  // Banner de novedades (mensaje del administrador)
+  let novBanner='';
+  if(D.novedades){
+    novBanner=`<div style="background:#fffbe6;border:1px solid #f0d800;border-left:4px solid var(--yw);border-radius:var(--r);padding:12px 16px;margin-bottom:16px;font-size:13px;color:#5a4a00"><strong>📢 Novedades:</strong> ${D.novedades}</div>`;
+  }
+
   // Hero
   let subLine='';
   if(vd.esJefe)subLine=`Jefatura — Canal ${vd.canal} · Tasa ${fmtPct(rate)}`;
   else if(vd.esAux)subLine=`Auxiliar depósito — Suc. ${vd.suc} · Tasa ${fmtPct(rate)}`;
   else subLine=`Tasa ${fmtPct(rate)} · ${vd.facts||0} facturas comisionadas · Mes: ${mes}`;
+  // Insertar banner de novedades arriba del hero
+  let novEl=document.getElementById('nov-banner');
+  if(!novEl){novEl=document.createElement('div');novEl.id='nov-banner';$('#vp-hero').parentNode.insertBefore(novEl,$('#vp-hero'))}
+  novEl.innerHTML=novBanner;
+
   $('#vp-hero').innerHTML=`
     <div class="vp-av">${ini(nombre)}</div>
     <div style="flex:1"><div class="vp-name">${nombre}</div><div class="vp-sub">${subLine}</div></div>
@@ -284,9 +306,11 @@ function renderPortal(D,sess){
   // Stats
   const mejorMes=hist.length?hist.reduce((a,b)=>b.com>a.com?b:a,hist[0]):null;
   const totalHist=sumBy(hist,h=>h.com||0);
+  // Proyección: lo de este mes + lo que entraría si se cobran todas las pendientes
+  const proy=(D.proyeccion!=null?D.proyeccion:pendCom);
   $('#vp-stats').innerHTML=`
     <div class="sc"><div class="sc-l">Este mes</div><div class="sc-v g">${fmtV(com)}</div></div>
-    <div class="sc"><div class="sc-l">Pendiente esperado</div><div class="sc-v y">${fmtV(pendCom)}</div></div>
+    <div class="sc"><div class="sc-l">Si se cobra todo</div><div class="sc-v y">${fmtV(com+proy)}</div></div>
     <div class="sc"><div class="sc-l">Pend. USD</div><div class="sc-v b">${fmtU(pendUSD)}</div></div>
     <div class="sc"><div class="sc-l">Mejor mes</div><div class="sc-v">${mejorMes?fmtV(mejorMes.com):'—'}</div></div>`;
 
@@ -315,10 +339,18 @@ function renderPortal(D,sess){
   const pend=vd.pend||[];
   if(pend.length){
     let h=`<div class="alert">⏳ Tenés ${pend.length} factura${pend.length>1?'s':''} pendiente${pend.length>1?'s':''} de cobro por USD ${fmtU(pendUSD).replace('USD ','')} — cuando el cliente pague, la comisión esperada de ${fmtV(pendCom)} se liquida en el próximo mes.</div>`;
+    h+=`<div style="background:#e8f5e4;border:1px solid var(--gd);border-radius:var(--r);padding:14px 18px;margin-bottom:16px;font-size:13px;color:#2d6424">💡 <strong>Proyección:</strong> si todas tus pendientes se cobran, el mes próximo sumarías <strong>${fmtV(pendCom)}</strong> además de tus nuevas ventas.</div>`;
     h+=mkTbl(pend,rate,false);
     $('#t-pendientes').innerHTML=h;
   } else {
     $('#t-pendientes').innerHTML='<div class="empty">✅ No tenés facturas pendientes de cobro.</div>';
+  }
+  // Vencidas: más de 3 meses sin cobrar → sin comisión
+  const venc=vd.venc||[];
+  if(venc.length){
+    let hv=`<div style="background:#fdf0f0;border:1px solid #e0b0b0;border-left:4px solid #c0392b;border-radius:var(--r);padding:12px 16px;margin:16px 0;font-size:13px;color:#7a2020">⛔ <strong>${venc.length} factura${venc.length>1?'s':''} excluida${venc.length>1?'s':''} por antigüedad:</strong> facturas con más de 3 meses sin cobrar quedan fuera del cobro de comisión según la política vigente.</div>`;
+    hv+=mkTbl(venc,rate,false);
+    $('#t-pendientes').innerHTML+=hv;
   }
 
   // Historial
@@ -335,27 +367,29 @@ function renderPortal(D,sess){
     h+=`<div class="tw"><table class="dt"><thead><tr><th>Mes</th><th class="r">Facts.</th><th class="r">Comisión</th></tr></thead><tbody>`;
     for(const m of [...hist].reverse()){h+=`<tr${m.mes===mes?' style="font-weight:600"':''}><td>${m.mes}</td><td class="r">${m.facts||0}</td><td class="g">${fmtV(m.com||0)}</td></tr>`}
     h+=`<tr class="tot"><td>Total histórico</td><td></td><td class="g">${fmtV(totalHist)}</td></tr></tbody></table></div>`;
+    // Comparativa interanual: mismo mes del año anterior
+    const mesNum=mes.slice(5,7);
+    const anioAct=parseInt(mes.slice(0,4));
+    const anterior=hist.find(x=>x.mes===`${anioAct-1}-${mesNum}`);
+    const actual=hist.find(x=>x.mes===mes);
+    if(anterior&&actual&&anterior.com>0){
+      const dif=((actual.com-anterior.com)/anterior.com)*100;
+      const signo=dif>=0?'+':'';
+      const color=dif>=0?'var(--gd)':'#c0392b';
+      h+=`<div style="background:#f0f8f0;border:1px solid var(--bd);border-radius:var(--r);padding:14px 18px;margin-top:4px;font-size:13px">📊 <strong>Comparativa interanual:</strong> en ${anterior.mes} cobraste ${fmtV(anterior.com)} — este mes ${fmtV(actual.com)} <strong style="color:${color}">(${signo}${dif.toFixed(0)}%)</strong></div>`;
+    }
     $('#t-historial').innerHTML=h;
   } else {
     $('#t-historial').innerHTML='<div class="empty">Sin historial disponible todavía.</div>';
   }
 
-  // Ranking anónimo — todos los vendedores de la empresa
-  const rankSuc=D.rankingSuc||{};
-  // Consolidar todos los vendedores de todas las sucursales
-  const rankMap={};
-  for(const rows of Object.values(rankSuc)){
-    for(const r of rows){
-      if(!rankMap[r.v])rankMap[r.v]=0;
-      rankMap[r.v]+=r.com||0;
-    }
-  }
-  const rankAll=Object.entries(rankMap).map(([v,com])=>({v,com})).sort((a,b)=>b.com-a.com);
+  // Ranking anónimo — viene pre-anonimizado del admin (solo posición propia marcada)
+  const rankAll=(D.ranking||[]);
   if(rankAll.length>1){
     const maxCom=rankAll[0].com||1;
     let h=`<p style="font-size:12px;color:var(--mu);margin-bottom:14px">Ranking general — todos los vendedores</p>`;
     rankAll.forEach((r,i)=>{
-      const isMe=r.v===nombre;
+      const isMe=!!r.me;
       const pct=Math.max(4,(r.com/maxCom)*100);
       const medal=i===0?'gold':i===1?'silver':i===2?'bronze':'';
       h+=`<div class="rank-item${isMe?' me':''}">
